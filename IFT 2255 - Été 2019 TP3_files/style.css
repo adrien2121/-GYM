@@ -1,0 +1,146 @@
+/* Layout */
+body {
+	margin:0px auto auto;
+    width:800px;
+   
+	font-family: 'Open Sans', sans-serif;
+	
+	border: 0px;
+	border-style:dashed;
+	border-color:green;
+
+	font-size: 1em;
+	background-attachment: scroll;
+	margin-top:0;
+	background-position: top left;
+	background-repeat: repeat-x;
+	background-color:#d1cfd1;
+}
+
+html{
+	margin:0px;
+	padding:0px;
+}
+
+th { padding-right:10px; text-align:right;}
+
+#mainContainer {
+	margin-left:0px;
+	padding:0px;
+	
+	position:relative;
+	float:right;
+	width:800px;/* super is 800px */
+
+}
+h1, h2, h3 {
+	font-family: Courier, Helvetica, sans-serif;
+	margin-bottom:0px;
+}
+#header {
+	font-family: Courier, Helvetica, sans-serif;
+    color:#000044;
+	font-weight:bold;
+	padding-left:0px;
+	width:800px;
+	text-align:center;
+	margin-top:10px;
+}
+
+
+.style1 {
+
+	font-size: 1.5em;	
+	padding:0px;
+	
+	/*border:dashed 1px green;*/
+	margin:auto;
+}
+.style2 {
+
+	font-size: 1.3em;	
+	padding:0px;
+	
+	/*border:dashed 1px red;*/
+	margin:auto;
+}
+
+#top {
+	text-align:right;
+	font-size: 1.0em;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+    font-family:courier; 
+	border-bottom: 1px;
+	border-bottom-style:ridge;
+	border-bottom-color:navy;
+}
+
+h2 {
+    font-family: courier, Helvetica, sans-serif;
+	font-size: 1.2em;
+	background-attachment: scroll;
+	/*background-color: rgba(98,91,147, 0.2);*/
+	padding-left:0px;
+	padding-top:00px;
+	margin-top:0px;
+	border-bottom-style:solid;
+	border-bottom-color: #9090CB;
+	border-bottom-width:0px;
+}
+
+
+em {
+	font-size: 1.0em;
+	text-decoration:underline;
+}
+
+
+#superContainer {
+    margin:5px 8px 0px 3px;
+}
+
+.container  > h3 {
+	text-align: left;
+	padding:0px;
+	margin:0px;
+}
+.content {
+    text-align:justify;
+    
+	background-color: #e0eff9;
+    
+    border-style:solid;
+    border-width:0px;
+	border-color: #000000;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:20px;
+	margin-bottom:10px;
+	border-radius:3px;
+	box-shadow: 4px 4px 12px #96968b;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+    font-style:italic;
+    color:#000066;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}

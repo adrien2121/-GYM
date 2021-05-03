@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFT2255 TP2 Rapport</title>
+    <style>
+
+        img {
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+
+        .diagramme {
+            margin: 0px auto auto;
+            background-color: #e0eff9;
+
+            border-style:solid;
+            border-width:0px;
+            border-color: #ADD8E6;
+            padding:10px;
+            border-radius:3px;
+            margin-bottom:10px;
+
+            width:1300px;
+        }
+
+        body {
+            margin: 0px auto auto;
+            background-color: #4771A5;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 23px;
+        }
+
+        table {
+            border: outset 2px black;
+            border-collapse: collapse;
+        }
+
+        th {
+            border-bottom: double 2px black;
+        }
+
+        td {
+            border-bottom: solid 1px black;
+            text-align: center;
+        }
+
+        .first_col {
+            border-right: double 2px black;
+        }
+
+        a {
+            color: navy;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        li {
+            padding-bottom: 5px;
+        }
+
+        .title {
+            color: #8b0000;
+            font-weight: bold;
+        }
+
+        .scenario {
+            padding-left: 25px;
+        }
+
+        .tache {
+            margin: 0px auto auto;
+            width: 950px;
+            text-align:justify;
+
+            background-color: #e0eff9;
+
+            border-style:solid;
+            border-width:0px;
+            border-color: #ADD8E6;
+            padding:10px;
+            padding-left:20px;
+            padding-right:20px;
+            padding-bottom:20px;
+            padding-top:20px;
+            margin-bottom:10px;
+            border-radius:3px;
+        }
+
+        dt {
+            padding-top: 5px;
+        }
+
+        hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-top:10px;">
+        <div class="tache" style="text-align: center;">
+            <h1>IFT 2255 - Été 2019 - Devoir 2</h1>
+            <p style="font-size:12px;"><i>Style de page inspiré des énoncés des TPs du cours.</i></p>
+        </div>
+
+        <div class="tache" id="tableContent">
+            <h2>Table des matières</h2>
+            <ul>
+                <li><a href="#infoGeneral">Informations générales</a></li>
+                <li><a href="#distributionTaches">Distribution des tâches</a></li>
+                <li><a href="#remarque">Remarques</a></li>
+            </ul>
+            <ol>
+                <li><a href="#tache1">Tâche 1: Glossaire</a></li>
+                <li><a href="#tache2">Tâche 2: Diagramme de CUs UML</a></li>
+                <li><a href="#tache3">Tâche 3: Scénarios des CUs</a></li>
+                <li><a href="#tache4">Tâche 4: Risques</a></li>
+                <li><a href="#tache5">Tâche 5: Exigences non-fonctionnelles</a></li>
+                <li><a href="#bonusTP1">Tâche Bonus TP1: Prototype</a></li>
+                <li><a href="#tache6">Tâche 6: Analyse</a></li>
+                <li><a href="#tache7">Tâche 7: Diagrammes d'activités</a></li>
+                <li><a href="#tache8">Tâche 8: Diagramme de classe</a></li>
+                <li><a href="#tache9">Tâche 9: Diagrammes de séquence</a></li>
+                <li><a href="#tache10">Tâche 10: Prototype</a></li>
+            </ol>
+        </div>
+
+        <div class="tache" id="infoGeneral">
+            <h1>Équipe 6</h1>
+            <h2>Information générale</h2>
+            <p> <!-- Membre #1 -->
+                <span style="font-weight: bold;">Nom: </span>Adrien Adam<br>
+                <span style="font-weight: bold;">Matricule (4 dernier chiffre): </span>7980<br>
+                <span style="font-weight: bold;">Courriel: </span>adrien.adam@umontreal.ca<br>
+                <span style="font-weight: bold;">temps mis: </span>8 heures
+            </p>
+            <p> <!-- Membre #2 -->
+                <span style="font-weight: bold;">Nom: </span>Soumaila Keita<br>
+                <span style="font-weight: bold;">Matricule (4 dernier chiffre): </span>5670<br>
+                <span style="font-weight: bold;">Courriel: </span>soumaila.keita@umontreal.ca<br>
+                <span style="font-weight: bold;">temps mis: </span>8 heures
+            </p>
+            <p> <!-- Membre #3 -->
+                <span style="font-weight: bold;">Nom: </span>Tina Liu<br>
+                <span style="font-weight: bold;">Matricule (4 dernier chiffre): </span>2684<br>
+                <span style="font-weight: bold;">Courriel: </span>tina.liu@umontreal.ca<br>
+                <span style="font-weight: bold;">temps mis: </span>8 heures
+            </p>
+        </div>
+        <div class="tache" id="distributionTaches">
+            <h2>Distribution des tâches</h2>
+            <p>
+                <span style="font-weight: bold;">Soumissionaire: </span>Tina Liu
+            </p>
+            <table cellpadding="7px">
+                <thead>
+                <tr>
+                    <th class="first_col">
+                        Tâche
+                    </th>
+                    <th>
+                        Adrien
+                    </th>
+                    <th>
+                        Soumaila
+                    </th>
+                    <th>
+                        Tina
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="first_col">
+                        Révision globale des exigences
+                    </td>
+                    <td> <!-- Membre #1 -->
+                        20
+                    </td>
+                    <td> <!-- Membre #2 -->
+                        40
+                    </td>
+                    <td> <!-- Membre #3 -->
+                        40
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first_col">
+                        Analyse
+                    </td>
+                    <td> <!-- Membre #1 -->
+                        20
+                    </td>
+                    <td> <!-- Membre #2 -->
+                        40
+                    </td>
+                    <td> <!-- Membre #3 -->
+                        40
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first_col">
+                        Diagrammes d'activités
+                    </td>
+                    <td> <!-- Membre #1 -->
+                        35
+                    </td>
+                    <td> <!-- Membre #2 -->
+                        35
+                    </td>
+                    <td> <!-- Membre #3 -->
+                        30
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first_col">
+                        Diagramme de classe
+                    </td>
+                    <td> <!-- Membre #1 -->
+                        10
+                    </td>
+                    <td> <!-- Membre #2 -->
+                        10
+                    </td>
+                    <td> <!-- Membre #3 -->
+                        80
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first_col">
+                        Diagrammes de séquence
+                    </td>
+                    <td> <!-- Membre #1 -->
+                        40
+                    </td>
+                    <td> <!-- Membre #2 -->
+                        40
+                    </td>
+                    <td> <!-- Membre #3 -->
+                        20
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first_col">
+                        Implémentation
+                    </td>
+                    <td> <!-- Membre #1 -->
+                        10
+                    </td>
+                    <td> <!-- Membre #2 -->
+                        80
+                    </td>
+                    <td> <!-- Membre #3 -->
+                        10
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1 style="color:red;">todo:changer le graphe des commits</h1>
+        <img src="Exigences/GrapheOfCommits.PNG" width="900px" style="margin-left:auto;margin-right:auto;display:block;width:75%">
+
+        <div class="tache" id="remarque">
+            <h2>Remarque (révision des exigences)</h2>
+            <p>
+                Le glossaire est mis à jour avec les mots qui sont apparus dans l'énoncé du TP-2 comme "Gérant", "TEF" et
+                plusieurs autres.
+            </p>
+
+            <p>
+                Des modifications ont été apportés aux scénarios cas d'utilisation pour permettre plus de détails donnés
+                dans l'énoncé du TP-2. De plus, des nouveaux cas d'utilisations ont été ajoutés comme le "Procédure comptable"
+                et "Exécuter un synthèse". Par conséquent, le diagramme de CU est également modifié et le gérant est ajouté
+                comme nouveau acteur.
+            </p>
+            <h2>Hypothèses</h2>
+            <p>
+                On suppose que les CUs sont nos objectifs principales à documentés. Les cas qui sont reliés à la gestion
+                d'un objet ne sont pas documentés dans le diagramme de CU, mais le sont dans les diagrammes d'analyse et de
+                conception.
+            </p>
+            <p>
+                On suppose également que les diagrammes fournis pour ce TP ne sont pas finals et que des changements seront
+                à apporter aux diagrammes (forte emphase le diagramme de classe).
+            </p>
+        </div>
+
+        <div class="tache" id="tache1">
+            <h2>Tâche 1: Glossaire</h2>
+            <p>
+                Pour le glossaire, on a décidé de définir des mots-clés qui reviennent quelques à plusieurs fois dans les tâches
+                du premier TP et qui reviendront certainement durant le processus de développement.
+            </p>
+            <h3>Solution</h3>
+            <div>
+                <h4 style="color:red;">Nouveau</h4>
+                <dl>
+                    <dt><b>Frais mensuels d'adhésion</b></dt>
+                    <dd>
+                        Le montant à payer à chaque mois pour continuer d’être un membre valide de #GYM.
+                    </dd>
+
+                    <dt><b>Frais d'inscription</b></dt>
+                    <dd>
+                        Le montant à payer pour assister à une séance de service fourni par un professionnel.
+                    </dd>
+
+                    <dt><b>Gérant</b></dt>
+                    <dd>
+                        Un individu est responsable du #GYM et de tout ce qui se passe dans le #GYM. Superviseur/employeur de l’agent.
+                    </dd>
+
+                    <dt><b>Compte payable</b></dt>
+                    <dd>
+                        Un compte qui doit être payé, c’est-à-dire un compte qui a fourni un service durant une semaine payable.
+                    </dd>
+
+                    <dt><b>TEF</b></dt>
+                    <dd>
+                        Abréviation de <i>Transfert électronique de fond</i>.
+                    </dd>
+
+                    <dt><b>Transfert électronique de fond</b></dt>
+                    <dd>
+                        Un fichier qui contient les données de transfert électronique de
+                        fond. Il contient le nom d’un professionnel, le numéro unique du professionnel et le montant à lui payer
+                        pour les séances fournies durant une semaine donnée.
+                    </dd>
+
+                    <dt><b>Rapport de gérant</b></dt>
+                    <dd>
+                        Fichier qui contient la synthèse des évènements et des comptes payables.
+                        Une liste de professionnel à payer, ainsi que le nombre total de services fournis durant la semaine et
+                        le total de leurs frais. À la fin, on voit le nombre de professionnels qui ont fourni un service durant la
+                        semaine, le nombre total de service fournis et le total des frais.
+                    </dd>
+
+                    <dt><b>Procédure comptable</b></dt>
+                    <dd>
+                        Procès qui est exécutée au Centre des Données #GYM chaque vendredi à minuit
+                        pour calculer les frais à payer aux professionnels qui ont fourni un/des service(s) durant la semaine
+                        et enregistre le résultat et d’autres informations nécessaires dans un fichier TEF. D’autre part,
+                        un rapport de synthèse du gérant qui concerne les comptes payables de la semaine et d’autres informations
+                        pertinentes sur la semaine est également exécuté avec les TEF.
+                    </dd>
+
+                    <dt><b>RnB</b></dt>
+                    <dd>
+                        Organisation tierce qui est responsable du traitement des paiements des frais d’adhésion.
+                    </dd>
+                </dl>
+            </div>
+            <a href="#tableContent">Table des matières</a>
+            <hr>
+            <div>
+                <dl>
+                    <dt><b>Agent</b></dt>
+                    <dd>
+                        Personnel de #GYM travaillant à la réception du centre. C’est auprès de lui que le client peut adhérer à #GYM.
+                        L’agent permet aussi au client de s’inscrire à des séances de sports ou des services fournis par des professionnels.
+                    </dd>
+                    <dt><b>Centre de données</b></dt>
+                    <dd>Endroit où toutes les données de tous les clients seront stockées.</dd>
+
+                    <dt><b>Réception</b></dt>
+                    <dd>
+                        Le poste à partir d’où le Centre de Données est accédé en majorité pour des cas d’utilisations par l’agent.
+                    </dd>
+
+                    <dt><b>Adhérer (à #GYM)</b></dt>
+                    <dd>
+                        Pour faire partie du centre, le client doit s’enregistrer à la réception.
+                        Il donne ses informations personnelles à l’agent, qui sera acheminé au Centre de Données.
+                    </dd>
+
+                    <dt><b>Numéro unique</b></dt>
+                    <dd>Identification d’un membre de #GYM.</dd>
+
+                    <dt><b>Professionnel</b></dt>
+                    <dd>
+                        Enregistré dans le Centre de Données similairement à un membre. Individu qui offre un/des
+                        service(s) au #GYM et possède le privilège de consulter la/les liste(s) d’inscriptions à sa/ses séance(s).
+                    </dd>
+
+                    <dt><b>Inscription</b></dt>
+                    <dd>
+                        Le client peut s’inscrire aux services d’un professionnel et/ou à un cours de sport. Pour se
+                        faire, le client doit se référer à la réception. L’agent lui montre l’ensemble séances disponibles dans le
+                        Répertoire des Services. Le client doit confirmer son inscription quand il sélectionne une séance.
+                        Il faut vérifier s’il n’y a pas de conflit d’horaire avec les séances dont le client va assister.
+                    </dd>
+
+                    <dt><b>Validation</b></dt>
+                    <dd>
+                        L’agent vérifie le numéro de membre du client pour valider l’accès du client, à chaque visite.
+                        Si l’abonnement est expiré, « Numéro invalide » sera affiché. Si le membre est suspendu, alors « Membre suspendu »
+                        sera affiché. S’il n’y a ni l’un ni l’autre, alors l’accès sera validé. Cette information sera vérifié dans
+                        le Centre de Données.
+                    </dd>
+
+                    <dt><b>Répertoire des Services</b></dt>
+                    <dd>
+                        Endroits où toutes les séances disponibles sont stockées.
+                    </dd>
+
+                    <dt><b>Fournir un service</b></dt>
+                    <dd>
+                        Un professionnel doit voir l’agent pour que celui-ci créer une séance de service ou d’activité.
+                        L’information sera stockée dans le Centre de Données. Si le professionnel est nouveau, l’agent lui créer un
+                        compte comme un client.
+                    </dd>
+
+                    <dt><b>Activités physiques</b></dt>
+                    <dd>
+                        On entend par activité physique tout mouvement produit par les muscles squelettiques,
+                        responsable d’une augmentation de la dépense énergétique.
+                    </dd>
+
+                    <dt><b>Séance de service</b></dt>
+                    <dd>
+                        Une période d’activité (physique ou non), ou de consultation donnée par un professionnel,
+                        identifiée par un code de service
+                    </dd>
+
+                    <dt><b>Code de service</b></dt>
+                    <dd>
+                        Séquence de 7 chiffres qui identifie une séance de service.
+                    </dd>
+
+                    <dt><b>Consultation de service</b></dt>
+                    <dd>
+                        L’agent montre au professionnel les inscriptions à sa séance. Une requête est envoyé
+                        au Centre de Données pour vérifier cette information.
+                    </dd>
+
+                    <dt><b>Confirmation</b></dt>
+                    <dd>
+                        Le client doit confirmer sa présence avant qu’une séance commence. L’agent confirme la présence
+                        dans le Répertoire des Services. En faisant cela, une requête est envoyée au Centre de Données pour vérifier
+                        si l’inscription est valide.
+                    </dd>
+                </dl>
+            </div>
+            <a href="#tableContent">Table des matières</a>
+        </div>
+
+        <div class="tache" id="tache2">
+            <h2>Tâche 2: Diagramme des cas d'utilisation UML</h2>
+            <h3>Solution</h3>
+            <div>
+                <h4 style="color:red;">Nouvelle version (TP-2)</h4>
+                <img src="Exigences\CU\IFT2255_TP2_Diagram_CU.jpg" style="margin-left:auto;margin-right:auto;display:block;width:100%">
+            </div>
+            <br>
+            <a href="#tableContent">Table des matières</a>
+            <hr>
+            <div style="opacity:0.4;">
+                <h4>Ancienne version (TP-1)</h4>
+                <p>
+                    On a simplement pris en considération tous, ou sinon une grande partie, les cas possibles d'utilisation du système
+                    à partir de l'énoncé.
+                </p>
+                <img src="Exigences/CU/IFT2255_TP1_Diagram_CU.jpg" style="margin-left:auto;margin-right:auto;display:block;width:100%">
+            </div>
+            <br>
+            <a href="#tableContent">Table des matières</a>
+        </div>
+
+        <div class="tache" id="tache3">
+            <h2>Tâche 3: Scénarios des cas d'utilisation</h2>
+            <h3 style="color:red;text-decoration:underline;">Note pour le TP2: Les modifications sont en caractères gras.</h3>
+            <p>
+                On suppose également que:
+                l'agent sait déjà comment utiliser le logiciel et
+                que le système est déjà près à recevoir des donnnées au moment des cas d'utilisation.
+                les clients ont tous ce qu'il faut pour créer un compte
+                Le client est déjà présent à la réception avec l'agent
+                le système et la machine sur laquelle le système opére fonctionnent correctement
+            </p>
+            <h3>Solution</h3>
+            <div>
+                <h4 style="color:red;">Nouveau</h4>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Exécuter procédure comptable<br>
+                    <span class="title">But:</span> Créer des fichiers TEF pour permettre le traitement des paiements des
+                    frais aux professionnels qui ont fourni un/des service(s) durant la semaine et exécuter un synthèse. <br>
+
+                    <span class="title">Pré-conditions:</span>
+                    Les enregistrements de confirmation doivent être bien formattés et disponibles d’accès. Le système doit être fonctionnel.
+                    Ça peut seulement s’exécuter les vendredi à minuit. <br>
+
+                    <span class="title">Acteurs:</span> Aucun <br>
+                    <span class="title">Scénario principal:</span>
+                    <div class="scenario">
+                        1. Lire le fichier qui contient les enregistrements de confirmation de présence à une séance de la semaine.<br>
+                        2. Trier les enregistrements par séance, puis par professionnel. Retirer les doublons (deux séances qui offrent le même service durant la même période de temps).
+                        3. Regrouper les séances, puis générer les enregistrements sur le disque sous forme de données de transfert électronique
+                        de fond (TEF). <br>
+                        <div class="scenario">
+                            3.1. Calculer le montant à transférer au professionnel pour les services qu'il a fourni.<br>
+                            3.2. Le fichier TEF contient le nom du professionnel, son numéro unique et le
+                            montant à lui transférer pour les services qu’il a fourni de la semaine.<br>
+                            3.3. Ranger le fichier dans un répertoire dédié à stocker les TEFs de la semaine.
+                        </div>
+                        4.	Aller au CU « Exécuter un rapport de synthèse ».<br>
+                        <div class="scenario">
+                            4.1. Récupérer le nouveau rapport de synthèse et l’envoyer au gérant.
+                        </div>
+                    </div>
+                    <div class="scenario">
+                        <span class="title">Scénario alternatif:</span>
+                        <div class="scenario">
+                            1.a.1 Le chemin au fichier est invalide.<br>
+                            1.a.2. Retourner une exception.
+                        </div>
+                    </div>
+                    <span class="title">Post-conditions:</span> Des fichiers TEF sont enregistrés dans un répertoire associé.
+                    Le rapport est aussi enregistré dans un répertoire de synthèse pour un accès futur.<br>
+                </div>
+                <br>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Exécuter un rapport de synthèse<br>
+                    <span class="title">But:</span> Générer un rapport qui contient les informations pertinentes sur la
+                    semaine pour des raisons administratives, commerciales ou autres.  <br>
+
+                    <span class="title">Pré-conditions:</span>
+                    Le gérant est validé comme gérant. <br>
+
+                    <span class="title">Acteurs:</span> Gérant (principal) ou CU « Exécuter procédure comptable » (principal) <br>
+                    <span class="title">Scénario principal:</span>
+                    <div class="scenario">
+                        1. Lire le fichier qui contient les services fournis de la semaine. <br>
+                        2. Produire un rapport de synthèse basé sur ce fichier.<br>
+                        <div class="scenario">
+                            2.1. Écrire un bloc de description pour chaque professionnel qui doivent être
+                            payé pour avoir fourni un/des service(s) pour la semaine.<br>
+                            <div class="scenario">
+                                2.1.1. Ce bloc contient le nom et numéro du professionnel, le nombre de
+                                service qu’il a fourni pour la semaine et le total des frais pour la semaine.
+                            </div>
+                            2.2. Après les blocs, écrire un sommaire du rapport.<br>
+                            <div class="scenario">
+                                2.2.1. Strictement pour la semaine spécificé, écrire le nombre total de
+                                professionnels qui ont fourni des services, le nombre total de services
+                                fournis et le total des frais à payer.
+                            </div>
+                        </div>
+                        3. Ranger ce rapport dans un répertoire dédié pour les rapports de gérant.
+                    </div>
+                    <span class="title">Post-conditions:</span> Un rapport de synthèse est enregistré comme fichier dans
+                    un répertoire de synthèse où on garde l’historique des synthèses dans un période donné.<br>
+                </div>
+                <br>
+                <h4 style="color:red;">Modifications</h4>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Créer un compte membre<br>
+                    <span class="title">But:</span> Le client adhère à #GYM<br>
+                    <span style="font-weight:bold;"><span class="title" style="font-weight:bold;">Pré-conditions:</span>
+                    L'organisation RnB qui gère les paiements est actif/opère.</span><br>
+                    <span class="title">Acteurs:</span> Le client (secondaire) et l’agent (principal)<br>
+                    <span class="title">Scénario principal:</span>
+                    <div class="scenario">
+                        1.	Le client se présente à la réception.<br>
+                        2.	L’agent entre les informations du client sur son ordinateur.<br>
+                        3.	Les informations sont acheminées au Centre de Données.<br>
+                        <span style="font-weight:bold;">4.	Le client paie les frais d’adhesion</span><br>
+                        5.	Le Centre de Données créer le nouveau membre et lui assigne un numéro unique.
+                    </div>
+                    <span style="font-weight:bold;"><span class="title">Post-conditions:</span>
+                    Un compte membre est enregistré dans le Centre de Données.</span>
+                </div>
+                <br>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Visiter le #Gym<br>
+                    <span class="title">But:</span> Le client veut visiter le Gym<br>
+                    <span class="title">Acteurs:</span> Le client (secondaire) et l’agent (principal)<br>
+                    <span class="title">Préconditions:</span>Le client est un membre et que le Centre de Données fonctionne bien.<br>
+                    <span class="title">Scénario principal:</span>
+                    <div class="scenario">
+                        1.	Le client se présente à la réception.<br>
+                        2.	Le client donne son id a l’agent.<br>
+                        3.	L’agent valide l’id et ouvre le tourniquet.<br>
+                    </div>
+                    <span class="title">Scénario alternatif:</span>
+                    <div class="scenario" style="font-weight:bold;">
+                        2.a.	Le client n'est pas inscrit au gym.<br>
+                        3.a.1. Le membre est suspendu (frais impayé).<br>
+                        3.a.2. Il paye les frais on revient à l'étape 3.
+                    </div>
+                    <span style="font-weight:bold;"><span class="title">Post-conditions:</span>
+                    Aucun</span>
+                </div>
+                <br>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Le client s’inscrit à une séance<br>
+                    <span class="title">But:</span> Le client veut participer à une séance <br>
+                    <span class="title">Préconditions: </span>Le client doit avoir adhéré à #GYM. On doit pouvoir accéder aux services.<br>
+                    <span class="title">Acteurs:</span> Le client (secondaire) et l’agent (principal)<br>
+                    <span class="title">Scénario principal:</span>
+                    <div class="scenario">
+                        1.	Le client se présente à la réception.<br>
+                        2.	L’agent consulte le Répertoire des Services et montre les disponibilités au client.<br>
+                        3.	Le client choisit une séance.<br>
+                        <span style="font-weight:bold;">4. On affiche les frais pour la séance.</span><br>
+                        5.	Le client confirme son inscription.<br>
+                        6.	Le logiciel créer un enregistrement sur le disque contenant les informations importantes.
+                    </div>
+                    <span style="font-weight:bold;"><span class="title">Post-conditions:</span>
+                    Le ID du membre est enregistré dans la liste des inscriptions de la séance.</span>
+                </div>
+            </div>
+            <br>
+            <a href="#tableContent">Table des matières</a>
+            <br>
+            <br>
+            <div>
+                <h4>Solution du TP-1</h4>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Créer une séance de service<br>
+                    <span class="title">But:</span> Un profesionnel veut offrir une séance<br>
+                    <span class="title">Pré-conditions:</span><span style="font-weight:bold;">Le service à rechercher existe. Le professionnel
+                    a un compte au #GYM.</span><br>
+                    <span class="title">Acteurs:</span> Le professionel (secondaire) et l'agent (principal)<br>
+                    <span class="title">Scénario principal:</span>
+                    <div class="scenario">
+                        1.	Le professionnel se présente à la réception.<br>
+                        2.	Le professionnel donne les informations de la séance à l’agent.<br>
+                        3.	L’agent envoie les informations au Centre de Données.<br>
+                        4.	Le logiciel créer la séance.
+                    </div>
+                    <span class="title">Scénario alternatif:</span>
+                    <div class="scenario">
+                        1.1	Le professionnel donne ses informations à l’agent<br>
+                        1.2	L’agent créer un compte #GYM pour le professionnel. Le scénario principal reprend au point 2
+                    </div>
+                    <span class="title">Post-conditions:</span><span style="font-weight:bold;">
+                    Une nouvelle séance est enregistrée dans la liste des séances d'un service.</span>
+                </div>
+                <br>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Valider le numéro de membre<br>
+                    <span class="title">But:</span> Vérifier si le numéro unique donné par le membre est valide ou non<br>
+                    <span class="title">Préconditions:</span> Le système est en marche.<br>
+                    <span class="title">Acteurs:</span> Le membre (secondaire) et l’agent (principal)<br>
+                    <span class="title">Scénario principal:</span>
+                    <div class="scenario">
+                        1.	Le membre donne son numéro unique à l’agent.<br>
+                        2.	L’agent entre ce numéro sur le logiciel pour la vérification par la console.<br>
+                        3.	Le numéro est validé par le logiciel et confirme que le client est adhéré au #GYM.<br>
+                    </div>
+                    <span class="title">Scénario alternatif:</span>
+                    <div class="scenario">
+                        3.a. Le numéro n’est pas valide puisque le client n’est pas encore un membre.
+                        <div class="scenario">
+                            3.a.1 L’agent suggère si le client serait intéresser à s’adhérer.
+                        </div>
+                        3.b. Le numéro est valide mais suspendu. Le membre se voit refuser accès au gym (et possiblement aux séances).
+                    </div>
+                    <span class="title">Post-conditions:</span><span style="font-weight:bold;">Aucun.</span>
+                </div>
+                <br>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Consulter du Répertoire des Services avec un membre<br>
+                    <span class="title">But:</span> Aider un membre à consulter la liste des services offertes à #GYM par des professionnels<br>
+                    <span class="title">Pré-conditions:</span><span style="font-weight:bold;">La personne qui accède au Répertoire est un individu autorisé.
+                    Connaître où est situé le Répertoire des Services. Le système est en marche.</span><br>
+                    <span class="title">Acteurs:</span>Agent (principal) et/ou un membre (secondaire)<br>
+                    <span class="title">Scénario principal:</span> L’agent<br>
+                    <div class="scenario">
+                        1.	L’agent accède au Répertoire des Services par la console.<br>
+                        2.	L’agent montre et navigue sur le Répertoire des Services à la guise du membre.
+                        <div class="scenario">
+                            2.1. L’agent choisit une séance<br>
+                            2.2. Toutes les informations sur la séance s’affiche sur la console
+                        </div>
+                        3.	L’agent ferme/termine la consultation du Répertoire des Services par la console.
+                    </div>
+                    <span class="title">Scénarios alternatifs:</span>
+                    <div class="scenario">
+                        1.a. Le Répertoire des Services est fermé pour une raison de maintenance, de conflit ou autre et on retourne à l’étape 3.<br>
+                        2.1.a. La séance est inaccessible ou n’existe plus (le Répertoire des Services n’est pas mis à jour) et on repart à l’étape 2.<br>
+                        2.3.a. Le membre veut s’inscrire à la séance qui s’affiche. Aller au cas d’utilisation « Le client s’inscrit à la séance » ou « Inscription à une séances ».
+                        <div class="scenario">
+                            1. Si le membre veut consulter d’autre(s) séance(s), retourner à l’étape 2. Sinon, 	terminer à l’étape 3.
+                        </div>
+                        2.3.b. Le client veut s’inscrire à une séance, mais n’est pas un membre.
+                        <div class="scenario">
+                            1. L’agent lui suggère de s’adhérer au #GYM. Aller au cas d’utilisation « Créer un compte 	membre ».
+                            2. Aller à l’étape 2.3.a.
+                        </div>
+                    </div>
+                    <span class="title">Post-conditions:</span><span style="font-weight:bold;">Aucun.</span>
+                </div>
+                <br>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Confirmer sa présence avant une séance<br>
+                    <span class="title">But:</span>  Le client va participer à une séance<br>
+                    <span class="title">Pré-conditions:</span><span style="font-weight:bold;">
+                    La séance à rechercher existe de même que pour le service qui lui est associé. Le client possède un compte membre.
+                    </span><br>
+                    <span class="title">Acteurs:</span> Le client (secondaire) et l’agent (principal)<br>
+                    <span class="title">Scénario principal:</span><br>
+                    <div class="scenario">
+                        1.	Le client se présente à la réception pour confirmer sa présence.<br>
+                        2.	L’agent recherche le bon code de service correspondant au service approprié.<br>
+                        3.	Aller à "Valider le numéro de membre".<br>
+                        4.	Le Logiciel créer la confirmation en avance que le service a été fournie.<br>
+                        5.	Le client assiste à la séance.<br>
+                        6.	Le client quitte la séance.<br>
+                    </div>
+                    <span class="title">Scénario alternatif:</span> Le client n'est pas inscrit à la séance
+                    <div class="scenario">
+                        3.1 Le mot « validé » n’apparait pas sur l’écran<br>
+                        3.2 L’accès du client à la séance est refusé. Le scénario reprend au point 7.
+                    </div>
+                    <span class="title">Post-conditions:</span><span style="font-weight:bold;">
+                    La confirmation de la présence d'une séance est enregistré dans un fichier sous un format précisé. Et
+                    le ID du membre est enregistré comme "confirmés" dans la séance.
+                    </span>
+                </div>
+                <br>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Consulter la liste des inscriptions à une séance<br>
+                    <span class="title">But:</span> Aider un professionnel à consulter la liste des inscriptions à une de ses séances<br>
+                    <span class="title">Pré-conditions:</span><span style="font-weight:bold;">
+                    Le professionnel possède un compte professionel au #GYM. Il doit fournir un service au moins.
+                    </span><br>
+                    <span class="title">Acteurs:</span> L'agent (principal) et le professionnel (secondaire)<br>
+                    <span class="title">Scénario principal:</span><br>
+                    <div class="scenario">
+                        1. Le professionnel donne son numéro ID.<br>
+                        2. L'agent entre son ID au système.
+                        <div class="scenario">
+                            2.1. Le système retourne une liste des séances que ce professionnel offre.
+                        </div>
+                        3. La liste de ses séances est affichée à la console et le professionnel choisit quelle séance consulter.
+                        <div class="scenario">
+                            3.1. La séance choisie est récupérée et le système retourne la liste des inscriptions.
+                        </div>
+                        4. La liste des inscriptions à la séance choisie est affichée à la console.<br>
+                        5. Si le professionnel désire consulter un autre de ses séances, l'agent retourne à l'étape 3.
+                    </div>
+                    <span class="title">Scénario alternatif:</span>
+                    <div class="scenario">
+                        2.1.a. Le numéro du client n'existe pas dans le Centre de Données. L'agent peut soit lui suggérer de créer
+                        un compte. Si oui, aller à "Créer un compte professionnel".
+                    </div>
+                    <span class="title">Post-conditions:</span><span style="font-weight:bold;">Aucun.</span>
+                </div>
+                <br>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Créer un compte professionnel<br>
+                    <span class="title">But:</span> Créer un compte professionnel<br>
+                    <span class="title">Pré-conditions:</span><span style="font-weight:bold;">
+                    Le nouveau professionnel ne possède pas de compte professionnel...
+                    </span><br>
+                    <span class="title">Acteurs:</span> L'agent (principal) et le professionnel (secondaire)<br>
+                    <span class="title">Scénario principal:</span><br>
+                    <div class="scenario">
+                        1. L'agent prend toutes les informations nécessaires pour créer le compte professionnel.<br>
+                        2. Il entre toutes les informations au système selon un certain processus.
+                        <div class="scenario">
+                            2.1. Le compte est créé.
+                        </div>
+                        3. Une fois le compte créé, l'agent suggère si le professionnel veut créer une séance. Si oui,
+                        aller à "Créer une séance de service".
+                    </div>
+                    <span class="title">Post-conditions:</span><span style="font-weight:bold;">
+                    Le nouveau compte professionnel est enregistré dans le Centre de Données.
+                    </span>
+                </div>
+            </div>
+            <br>
+            <a href="#tableContent">Table des matières</a>
+
+        </div>
+
+        <div class="tache" id="tache4">
+            <h2>Tâche 4: Risques</h2>
+            <p>
+                Dans notre solution, on mentionne quelques contextes spécifiques en supposant les prochains points suivants:
+            </p>
+            <ul>
+                <li>
+                    Il est dit que l'agent interagit avec le système par la console. On suppose qu'une certaine séquence de commandes
+                    est nécessaire pour le déclenchement d'un cas d'utilisation et que le gym n'est pas renseigné sur la formation
+                    d'un agent.
+                </li>
+                <li>
+                    On a également supposé que le système est installé sur une seule machine, la machine utilisée par l'agent à la
+                    réception dy gym.
+                </li>
+                <li>
+                    Puisque les données seront enregistrées dans un fichier, on mentionnne deux risques sur la sécurité.
+                </li>
+                <li>
+                    Puisque les exigences fonctionnelles ne sont pas précisées, on mentionne deux cas spécifiques mais importants à
+                    régler. Un des cas relie aux risques de sécurité.
+                </li>
+            </ul>
+            <h3>Solution</h3>
+            <p>
+                Voici les risques que nous avons identifié selon l'ordre de sévérité:
+            </p>
+            <ol>
+                <li>
+                    Puisque les données sont entrées dans la console (la ligne de commande), l'agent ne peut seulement entrer qu'une
+                    donnée à la fois. Ne pas connaître l'ordre des entrées peut entraîner des erreurs, puis l'arrêt du système.
+                    (Un agent devra apprendre comment utiliser le système, il lui faut un manuel d'utilisation).
+                </li>
+                <li>
+                    Risque d'un étranger au contrôle du système sans la permission de l'agent. Aucun critère ou code d'accès assigné
+                    à l'agent pour valider son entrée au système. L'étranger pourra accéder à toutes les données du système.
+                </li>
+                <li>
+                    En assumant que le système est installé sur seulement une machine, si cette machine se brise ou ne fonctionne plus
+                    pour des raisons quelconques, on risque de perdre le système totalement.
+                </li>
+                <li>
+                    Puisque les comptes des membres et des professionnels sont identifiés par leur numéro unique seulement, les cas
+                    de fraude et de vol d'identité risquent la sécurité des clients du #GYM.
+                </li>
+                <li>
+                    Il n'y a pas de mécanismes de modification après la création d'une séance. Donc, si l'agent crée une séance avec les
+                    mauvaises informations, des clients vont s'enregistrer à une séance que le professionnel n'a pas voulu créer.
+                </li>
+            </ol>
+            <a href="#tableContent">Table des matières</a>
+
+        </div>
+
+        <div class="tache" id="tache5">
+            <h2>Tâche 5: Exigences non-fonctionnelles</h2>
+            <p>
+                On liste quelques exigences qui ont été identifiées durant le travail sur le TP et qui n'ont pas été directement
+                précisées dans l'énoncé du TP. Cela nous aide également à comprendre comment le système va fonctionner et offre
+                une vue claire de comment le logiciel sera développé.
+            </p>
+            <h3>Solution</h3>
+            <p>
+                Voilà notre solution:
+            </p>
+            <ul>
+                <li>
+                    La validatibon d'un numéro de membre et la confirmation de la présence d'un membre à une séance doivent se faire
+                    dans moins de 10 secondes (contrainte sujette à des ajustements).
+                </li>
+                <li>
+                    Le numéro d'un membre validé ne peut être re-validé qu'après une heure pour ne pas laisser plusieurs personnes rentrer
+                    en même temps sous le même numéro de membre.
+                </li>
+                <li>
+                    Un membre régulier ne devrait pas être capable de consulter une liste d'inscription à une séance. On distinguera un
+                    membre régulier d'un professionnel par un attribut de classe.
+                </li>
+                <li>
+                    Pour les cas d'utilisations associés à un membre ou un professionnel, l'agent s'assure de confirmer que le client
+                    est bien un membre ou un professionnel du gym avant de continuer.
+                </li>
+                <li>
+                    Les entrées de données pour chaque cas d'utilisation suivent un certain ordre et un certain format pour pour
+                    éviter des exceptions/crashs non prévues. Il faut donc un manuel d'utilisation bien écrit.
+                </li>
+            </ul>
+            <a href="#tableContent">Table des matières</a>
+
+        </div>
+
+        <div class="tache" id="bonusTP1">
+            <h2>Tâche Bonus TP1: Implémentation d'un prototype</h2>
+            <h3>Le prototype a été déplacé à la <a href="#tache10">Tâche 10</a>!</h3>
+
+            <i style="font-size:20px;">Obsolete</i>
+            <div style="opacity:0.4;">
+                <p>
+                    Pour utiliser le prototype, suivez-les options qui sont affichées durant son <i>exécution</i>!
+                </p>
+                <p>
+                    Voici le fichier <as href="Implémentation\src\ift2255\Main.java">Main.java</as> qui est la base du prototype codé par Soumaila.
+                    Et voici les classes utilisées dans Main.java.
+
+                </p>
+                <ul>
+                    <li><as href="Implémentation/src/ift2255/Personne.java">Personne.java</as></li>
+                    <li><as href="Implémentation/src/ift2255/Membre.java">Membre.java</as></li>
+                    <li><as href="Implémentation/src/ift2255/Professionnel.java">Professionnel.java</as></li>
+                </ul>
+            </div>
+
+            <a href="#tableContent">Table des matières</a>
+        </div>
+
+        <div class="tache" id="tache6">
+            <h2>Tâche 6: Analyse (Brouillon)</h2>
+            <p>
+                En principe, on a besoin d'informatiser les utilisateurs (agent et gérant) et les acteurs secondaires
+                (membre et professionnel), puis les stocker dans quatres listes (une pour agent, gérant, membre et professionel)
+                dans le Centre de Données. On veut aussi stocker les services (qui contiennent des séances) dans le Centre
+                comme une liste également. Le système central a en principe des méthodes getters/setters et d'affichage.
+                On veut aussi pouvoir gérer et vérifier les horaires des acteurs secondaires pour éviter des conflits d'horaire.
+            </p>
+            <p>
+                Le système #GYM va communiquer avec le Centre de Données via les méthodes getter/setter et va déclencher
+                les CUs par les méthodes statiques (qui sont elles-mêmes déclenchées par les inputs de l'utilisateur).
+            </p>
+            <h3>Note</h3>
+            <p>
+                Notre diagramme de classe ne satisfait pas l'analyse ci-dessous, mais le reste du TP2 suit le diagramme
+                de classe. La rédaction de l'analyse a été fait après la complétion des diagrammes. Pour la prochaine phase,
+                on a l'intention d'adapter notre design à l'idée projetée le paragraphe suivant.
+            </p>
+            <br>
+            <a href="#tableContent">Table des matières</a>
+        </div>
+
+        <div id="tache7">
+            <div class="tache">
+                <h2>Tâche 7: Diagrammes d'activités</h2>
+                <p>
+                    On suppose que l'agent est authentifié avant d'utiliser le logiciel comme le montre le diagramme principal
+                    et que la gestion des membres et des séances se font uniquement à partir de l'agent communiquant avec
+                    le système. Donc, on suppose que la validation d'un professionnel est déjà fait.
+                </p>
+                <h3>Solution</h3>
+                <h4>Diagramme principal</h4>
+            </div>
+
+            <img src="Analyse/Activité_Flux_Système.jpg" width="1300px" style="margin-left:auto;margin-right:auto;display:block;">
+
+            <div class="tache">
+                <h4>Ajouter/Modifier/Supprimer un compte membre</h4>
+                <img src="Analyse/inscrit_modifie_sup membre.jpg" width="900px" style="margin-left:auto;margin-right:auto;display:block;">
+
+                <h4>Ajouter/Modifier/Supprimer une séance</h4>
+                <img src="Analyse/ajouter_mod_sup service.jpg" width="900px" style="margin-left:auto;margin-right:auto;display:block;">
+
+                <h4>Inscription à une séance</h4>
+                <img src="Analyse/Inscription à une séance Diagramme Activités.jpg" width="900px" style="margin-left:auto;margin-right:auto;display:block;">
+
+                <h4>Confirmation une séance </h4>
+                <img src="Analyse/Confirmer présence Diagramme Activités.jpg" width="900px" style="margin-left:auto;margin-right:auto;display:block;">
+
+                <h4>Procédure comptable</h4>
+                <img src="Analyse/TP2_Activity_Procédure comptable.jpg" width="900px" style="margin-left:auto;margin-right:auto;display:block;">
+
+                <a href="#tableContent">Table des matières</a>
+            </div>
+        </div>
+
+        <div id="tache8">
+            <div class="tache">
+                <h2>Tâche 8: Diagramme de classe</h2>
+                <p>
+                    Dans le diagramme de classe, on peut supposer que les getters/setters sont inclus pour tous les attributs et que
+                    les constructeurs prennent tous les attributs nécessaires comme paramètres. Si le dernier fait n'est pas
+                    accompli, cela veut dire que les attributs sont attribués par un setter.
+                </p>
+                <p>
+                    On suppose que l'agent et le gérant ont besoin de s'authentifier avant d'utiliser le système,
+                    mais ceci n'est pas encore spécifié comme fonctionnalité. Donc, nous l'omettons du reste des diagrammes.
+                </p>
+                <p>
+                    La classe Horaire n'est dans sa forme complète et clair. Donc, ce sera à contempler
+                    durant la phase d'implémentation.
+                </p>
+                <p>
+                    Il est également discuté que l'implémentation directe de ce diagramme de classe est compliqué durant le
+                    développement du prototype et donc il n'est pas faux de dire que l'implémentation nous coûtera cher, faute
+                    de mauvaise conception. C'est un sujet qui demandera une réflexion juste avant la phase d'implémentation
+                    et qui apportera des changements majeurs dans notre conception.
+                </p>
+            </div>
+            <img src="Conception/TP2_ClassDiagram.jpg" style="margin-left:auto;margin-right:auto;display:block;width:1300px;padding-top:0px;">
+            <div class="tache">
+                <a href="#tableContent">Table des matières</a>
+            </div>
+        </div>
+
+        <div id="tache9">
+            <div class="tache">
+                <h2>Tâche 9: Diagrammes de séquence</h2>
+                <h3>Solution</h3>
+
+                <p>todo : diagramme d'activités de Soumaila</p>
+            </div>
+
+            <div class="tache">
+                <h4>Ajouter/Modifier/Supprimer un membre</h4>
+            </div>
+            <img src="Conception/ajout_modif_supp_membre.jpg" width="1300px" style="margin-left:auto;margin-right:auto;display:block;">
+
+            <div class="tache">
+                <h4>Ajouter/Modifier/Supprimer une séance</h4>
+            </div>
+            <img src="Conception/ajout_modif_supp_seance.jpg" width="1300px" style="margin-left:auto;margin-right:auto;display:block;">
+
+            <div class="tache">
+                <h4>Inscription à une séance</h4>
+            </div>
+            <img src="Conception/Inscription à une séance Diagramme Séquence.jpg" width="1300px" style="margin-left:auto;margin-right:auto;display:block;">
+
+            <div class="tache">
+                <h4>Confirmation d'une présence à une séance</h4>
+            </div>
+            <img src="Conception/Confirmer présence Diagramme Séquence.jpg" width="1300px" style="margin-left:auto;margin-right:auto;display:block;">
+
+            <div class="tache">
+                <h4>Procédure comptable</h4>
+            </div>
+            <img src="Conception/Procedure_Comptable.jpg" width="1300px" style="margin-left:auto;margin-right:auto;display:block;">
+
+            <div class="tache">
+                <a href="#tableContent">Table des matières</a>
+            </div>
+        </div>
+
+        <div class="tache" id="tache10">
+            <h2>Tâche 10: Prototype (Mise à jour)</h2>
+            <a href="#tableContent">Table des matières</a>
+            <div>
+                <p>
+                    Pour utiliser le prototype, suivez-les options qui sont affichées durant son <i>exécution</i>!
+                </p>
+                <p>
+                    Voici le fichier <a href="Implémentation/src/ift2255/CentreDonnee.java">CentreDonnee.java</a> qui est
+                    la base du prototype codé par Soumaila. Et voici les classes utilisées dans Main.java.
+                </p>
+                <ul>
+                    <li><a href="Implémentation/src/ift2255/Compte.java">Compte.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/Membre.java">Membre.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/Professionnel.java">Professionnel.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/Service.java">Service.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/Seance.java">Seance.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/ProcedureComptable.java">ProcedureComptable.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/Gerant.java">Gerant.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/Agent.java">Agent.java</a></li>
+                    <li><a hrerf="Implémentation/src/ift2255/CentreDonnee.java">CentreDonnee.java</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

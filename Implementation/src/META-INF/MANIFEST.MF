@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: ift2255.Main
+

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="gym">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../Applications/Eclipse.app/Contents/Eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="9"/>
+    <property name="source" value="9"/>
+    <path id="JUnit 5.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit.jupiter.api_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit.jupiter.engine_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit.jupiter.migrationsupport_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit.jupiter.params_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit.platform.commons_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit.platform.engine_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit.platform.launcher_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit.platform.runner_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit.platform.suite.api_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit.vintage.engine_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.opentest4j_1.0.0.v20180327-1502.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.apiguardian_1.0.0.v20180327-1502.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+    </path>
+    <path id="gym.classpath">
+        <pathelement location="bin"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.CentreDonnee.classpath">
+        <path refid="gym.classpath"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.api_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.engine_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.migrationsupport_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.params_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.commons_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.engine_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.launcher_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.runner_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.suite.api_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.vintage.engine_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.opentest4j_1.0.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.apiguardian_1.0.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+    </path>
+    <path id="run.main (4).classpath">
+        <path refid="gym.classpath"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.api_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.engine_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.migrationsupport_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.params_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.commons_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.engine_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.launcher_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.runner_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.suite.api_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.vintage.engine_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.opentest4j_1.0.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.apiguardian_1.0.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+    </path>
+    <path id="run.main.classpath">
+        <path refid="gym.classpath"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.api_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.engine_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.migrationsupport_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.params_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.commons_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.engine_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.launcher_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.runner_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.suite.api_1.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.vintage.engine_5.1.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.opentest4j_1.0.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.apiguardian_1.0.0.v20180327-1502.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="gym.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="CentreDonnee">
+        <java classname="ift2255.CentreDonnee" failonerror="true" fork="yes">
+            <classpath refid="run.CentreDonnee.classpath"/>
+        </java>
+    </target>
+    <target name="main (4)">
+        <java classname="ift2255.main" failonerror="true" fork="yes">
+            <classpath refid="run.main (4).classpath"/>
+        </java>
+    </target>
+    <target name="main">
+        <java classname="ift2255.Main" failonerror="true" fork="yes">
+            <classpath refid="run.main.classpath"/>
+        </java>
+    </target>
+</project>

@@ -1,0 +1,16 @@
+﻿Exigences (ou contraintes) non-fonctionnelles
+
+1.  La validatibon d'un numéro de membre et la confirmation de la présence d'un membre à une séance doivent se faire
+    dans moins de 10 secondes (contrainte sujette à des ajustements).
+
+2. Le numéro d'un membre validé ne peut être re-validé qu'après une heure pour ne pas laisser plusieurs personnes rentrer
+   en même temps sous le même numéro de membre.
+
+3.  Un membre régulier ne devrait pas être capable de consulter une liste d'inscription à une séance. On distinguera un
+    membre régulier d'un professionnel par un attribut de classe.
+
+4.  Pour les cas d'utilisations associés à un membre ou un professionnel, l'agent s'assure de confirmer que le client
+    est bien un membre ou un professionnel du gym avant de continuer.
+
+5.  Les entrées de données pour chaque cas d'utilisation suivent un certain ordre et un certain format pour pour
+    éviter des exceptions/crashs non prévues. Il faut donc un manuel d'utilisation bien écrit.

@@ -1,0 +1,17 @@
+En gros, il faudra une structure de données pour le Centre de Données et une autre pour la gestion du Répertoire de Services.
+Quand on veut quitter le programme, toutes les structures de données doivent être sérialisable pour sauvegarder l'état du système dans un fichier.
+
+On a besoin d'informatiser : 
+	1. Les comptes membres et professionnels, les comptes d'agent (ou employé) et de gérant
+	2. Dans le Centre de Donnée, on stocke les membres dans une liste et les professionnels dans un autre.
+	3. Dans le Répertoire des Services, un service aura une ou plusieurs séances.
+		- Chaque séance aura deux fichiers d'enregistrements qui lui est associée, une pour l'inscription et l'autre pour la confirmation.
+		- Le format des données sont dans l'énoncé. 
+	4. Il faut gérer les horaires des séances pour garder l'historique de la semaine et par la suite exécuter le procédure comptable. 
+		- On peut soit manuellement demander au système de nous générer la liste de séances fournies ou soit que le système gère automatiquement dès
+		  qu'un séance est ajouté au Répertoire de Services (dès l'enregistrement de la création de la séance!
+		- Le format des données est dans l'énoncé.
+	5. Une requête envoyée au Centre de Donnée pour chercher la liste d'inscription à une séance. Cela doit se faire de manière efficace et il faut
+	   une certaine manière efficace de rechercher la séance avec seulement le code unique du service.
+
+

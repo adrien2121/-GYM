@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="CUSTOM_SCOPE_NAME" value="Open Files" />
+  </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Implementation:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="62564228-e076-446b-b06b-e31adc4a507f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/ant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gym3.jar" beforeDir="false" />
+    </list>
+    <list id="143bfb3f-3389-489f-890b-2709be7058b3" name="Not now" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ift2255/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="433" column="18" selection-start-line="433" selection-start-column="18" selection-end-line="433" selection-end-column="18" />
+              <folding>
+                <element signature="docComment;method#printMenu#0;class#Main#0" />
+                <element signature="method#printMenu#0;class#Main#0" />
+                <element signature="docComment;method#inscrireSeance#0;class#Main#0" />
+                <element signature="method#inscrireSeance#0;class#Main#0" />
+                <element signature="docComment;method#consulterInscrption#0;class#Main#0" />
+                <element signature="method#consulterInscrption#0;class#Main#0" />
+                <element signature="docComment;method#loginMembre#0;class#Main#0" />
+                <element signature="method#loginMembre#0;class#Main#0" />
+                <element signature="docComment;method#loginPro#0;class#Main#0" />
+                <element signature="method#loginPro#0;class#Main#0" />
+                <element signature="docComment;method#confirmerPresence#0;class#Main#0" />
+                <element signature="method#confirmerPresence#0;class#Main#0" />
+                <element signature="docComment;method#consulterRepertoire#0;class#Main#0" />
+                <element signature="method#consulterRepertoire#0;class#Main#0" />
+                <element signature="docComment;method#executerProcCompt#0;class#Main#0" />
+                <element signature="method#executerProcCompt#0;class#Main#0" />
+                <element signature="docComment;method#executerRapportGer#0;class#Main#0" />
+                <element signature="method#executerRapportGer#0;class#Main#0" />
+                <element signature="docComment;method#consulterRapportGerant#0;class#Main#0" />
+                <element signature="method#consulterRapportGerant#0;class#Main#0" />
+                <element signature="docComment;method#consulterRapportPro#0;class#Main#0" />
+                <element signature="method#consulterRapportPro#0;class#Main#0" />
+                <element signature="docComment;method#consulterRapportMembre#0;class#Main#0" />
+                <element signature="method#consulterRapportMembre#0;class#Main#0" />
+                <element signature="docComment;method#validerNumero#0;class#Main#0" />
+                <element signature="method#validerNumero#0;class#Main#0" />
+                <element signature="docComment;method#creerCompte#0;class#Main#0" />
+                <element signature="method#creerCompte#0;class#Main#0" />
+                <element signature="docComment;method#creerSeance#0;class#Main#0" />
+                <element signature="method#creerSeance#0;class#Main#0" />
+                <element signature="docComment;method#creerService#0;class#Main#0" />
+                <element signature="method#creerService#0;class#Main#0" />
+                <element signature="docComment;method#gererCompte#0;class#Main#0" />
+                <element signature="method#gererCompte#0;class#Main#0" />
+                <element signature="docComment;method#gererSeance#0;class#Main#0" />
+                <element signature="method#gererSeance#0;class#Main#0" />
+                <element signature="docComment;method#paiement#0;class#Main#0" />
+                <element signature="method#paiement#0;class#Main#0" />
+                <element signature="docComment;method#getSemaineDerniere#0;class#Main#0" />
+                <element signature="method#getSemaineDerniere#0;class#Main#0" />
+                <element signature="docComment;method#optionRetourMenu#0;class#Main#0" />
+                <element signature="method#optionRetourMenu#0;class#Main#0" />
+                <element signature="docComment;method#getJour#0;class#Main#0" />
+                <element signature="method#getJour#0;class#Main#0" />
+                <element signature="docComment;method#aideEntrerJour#0;class#Main#0" />
+                <element signature="method#aideEntrerJour#0;class#Main#0" />
+                <element signature="docComment;method#taperEnter#0;class#Main#0" />
+                <element signature="method#taperEnter#0;class#Main#0" />
+                <element signature="docComment;method#mauvaisCommande#0;class#Main#0" />
+                <element signature="method#mauvaisCommande#0;class#Main#0" />
+                <element signature="docComment;method#courrielValide#0;class#Main#0" />
+                <element signature="method#courrielValide#0;class#Main#0" />
+                <element signature="docComment;method#codePostalValide#0;class#Main#0" />
+                <element signature="method#codePostalValide#0;class#Main#0" />
+                <element signature="docComment;method#isLettre#0;class#Main#0" />
+                <element signature="docComment;method#isChiffre#0;class#Main#0" />
+                <element signature="method#isChiffre#0;class#Main#0" />
+                <element signature="docComment;method#allLettresSpace#0;class#Main#0" />
+                <element signature="method#allLettresSpace#0;class#Main#0" />
+                <element signature="docComment;method#newLine#0;class#Main#0" />
+                <element signature="method#newLine#0;class#Main#0" />
+                <element signature="docComment;method#afficherCharLimit#0;class#Main#0" />
+                <element signature="method#afficherCharLimit#0;class#Main#0" />
+                <element signature="docComment;method#cutStringToLimit#0;class#Main#0" />
+                <element signature="method#cutStringToLimit#0;class#Main#0" />
+                <element signature="docComment;method#initSystem#0;class#Main#0" />
+                <element signature="method#initSystem#0;class#Main#0" />
+                <element signature="docComment;method#saveSystem#0;class#Main#0" />
+                <element signature="method#saveSystem#0;class#Main#0" />
+                <element signature="method#main#0;class#Main#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>é</find>
+      <find>courrielValide</find>
+      <find>loginPro</find>
+      <find>getProL</find>
+      <find>Pro</find>
+      <find>getProLogin</find>
+      <find>afficherFrais</find>
+      <find>afficher</find>
+      <find>Service</find>
+      <find>getService</find>
+      <find>getListeMem</find>
+      <find>loginMembre</find>
+      <find>getListe</find>
+      <find>inscription</find>
+      <find>inscrire</find>
+      <find>creerCom</find>
+      <find>addM</find>
+      <find>creerCompte</find>
+      <find>getNbCompte</find>
+      <find>getMem</find>
+      <find>login</find>
+      <find>get</find>
+      <find>getSeance</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test/test.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/Pays/Canada.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/Compte.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/Membre.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/Professionnel.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/Lire.java" />
+        <option value="$PROJECT_DIR$/test/ift2255/SeanceTest.java" />
+        <option value="$PROJECT_DIR$/test/ift2255/LoginTest.java" />
+        <option value="$PROJECT_DIR$/test/LoginTest.java" />
+        <option value="$PROJECT_DIR$/test/testX.java" />
+        <option value="$PROJECT_DIR$/ant/build/build.xml" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/src/ift2255/formateur/NumberFormat.java" />
+        <option value="$PROJECT_DIR$/release/Documentation/build.xml" />
+        <option value="$PROJECT_DIR$/src/test.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/Confirmation.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/Inscription.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/Seance.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/Service.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/CentreDonnee.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/formateur/CalendarFormat.java" />
+        <option value="$PROJECT_DIR$/test/SeanceTest.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/Main.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/ProcedureComptable.java" />
+        <option value="$PROJECT_DIR$/src/ift2255/Enregistrement.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="505" />
+    <option name="width" value="878" />
+    <option name="height" value="775" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Implementation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Implementation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Implementation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Implementation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Implementation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="Implementation_jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Implementation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="release" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Implementation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="release" type="462c0819:PsiDirectoryNode" />
+              <item name="Documentation" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="true" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="build" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/release/Documentation/build.xml" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ift2255" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xiali_000\Documents\Git\ift2255_tp1\Implementation\release\Documentation" />
+      <recent name="C:\Users\xiali_000\Documents\Git\ift2255_tp1\Implementation\release" />
+      <recent name="C:\Users\xiali_000\Documents\Git\ift2255_tp1\Implementation" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xiali_000\Documents\Git\ift2255_tp1\Implementation\release" />
+      <recent name="C:\Users\xiali_000\Documents\Git\ift2255_tp1\Implementation\resources" />
+      <recent name="C:\Users\xiali_000\Documents\Git\ift2255_tp1\Implementation\out\artifacts\Implementation_jar" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.SeanceTest">
+    <configuration name="CalendarFormat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ift2255.formateur.CalendarFormat" />
+      <module name="Implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ift2255.formateur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ift2255.Main" />
+      <module name="Implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ift2255.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="Implementation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ift2255.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ift2255.LoginTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ift2255.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ift2255.SeanceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.CalendarFormat" />
+      <item itemvalue="JUnit.LoginTest" />
+      <item itemvalue="JUnit.SeanceTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SeanceTest" />
+        <item itemvalue="Application.CalendarFormat" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="JUnit.LoginTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62564228-e076-446b-b06b-e31adc4a507f" name="Default Changelist" comment="" />
+      <changelist id="143bfb3f-3389-489f-890b-2709be7058b3" name="Not now" comment="" />
+      <created>1563591111975</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563591111975</updated>
+      <workItem from="1563745243683" duration="15848000" />
+    </task>
+    <task id="LOCAL-00001" summary="loginPro() ajouté et une méthode de support">
+      <created>1563634385914</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563634385914</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ajout de creerService() comme CU avec des méthodes supports">
+      <created>1563635327069</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563635327069</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fix du test de Soumaila">
+      <created>1563833765553</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563833765553</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fix du test de Soumaila">
+      <created>1563939666713</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1563939666717</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SeanceTest - 2019.07.23 at 17h 39m 29s.xml">
+      <configuration name="SeanceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeanceTest - 2019.07.23 at 17h 40m 39s.xml">
+      <configuration name="SeanceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeanceTest - 2019.07.23 at 17h 41m 06s.xml">
+      <configuration name="SeanceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeanceTest - 2019.07.23 at 17h 43m 59s.xml">
+      <configuration name="SeanceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeanceTest - 2019.07.23 at 17h 44m 26s.xml">
+      <configuration name="SeanceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeanceTest - 2019.07.23 at 17h 46m 00s.xml">
+      <configuration name="SeanceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeanceTest - 2019.07.23 at 17h 46m 22s.xml">
+      <configuration name="SeanceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeanceTest - 2019.07.23 at 17h 47m 51s.xml">
+      <configuration name="SeanceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeanceTest - 2019.07.23 at 17h 48m 52s.xml">
+      <configuration name="SeanceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeanceTest - 2019.07.23 at 17h 49m 53s.xml">
+      <configuration name="SeanceTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="15848000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24281392" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.33486944" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960256" weight="0.827957" />
+      <window_info anchor="bottom" x="132" y="104" width="1101" height="559" id="Debug" order="3" type="WINDOWED" weight="0.85867894" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32872504" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50039744" side_tool="true" weight="0.18862042" />
+      <window_info active="true" anchor="bottom" x="22" y="277" width="1322" height="214" id="Version Control" order="9" visible="true" weight="0.3778802" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.21658987" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24886535" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14372164" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.18586789" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960256" weight="0.15053764" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23382697" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32872504" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50039744" side_tool="true" weight="0.18862042" />
+      <window_info anchor="bottom" x="22" y="277" width="1322" height="214" id="Version Control" order="9" weight="0.32718894" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.14439324" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24908425" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="loginPro() ajouté et une méthode de support" />
+    <MESSAGE value="Ajout de creerService() comme CU avec des méthodes supports" />
+    <MESSAGE value="Fix du test de Soumaila" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix du test de Soumaila" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/SeanceTest.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+    <buildFile url="file://$PROJECT_DIR$/release/Documentation/build.xml">
+      <targetFilters>
+        <filter targetName="register.custom.compilers" isVisible="false" />
+        <filter targetName="compile.module.implementation" isVisible="true" />
+        <filter targetName="compile.module.implementation.production" isVisible="true" />
+        <filter targetName="compile.module.implementation.tests" isVisible="true" />
+        <filter targetName="clean.module.implementation" isVisible="true" />
+        <filter targetName="init" isVisible="true" />
+        <filter targetName="clean" isVisible="true" />
+        <filter targetName="build.modules" isVisible="true" />
+        <filter targetName="init.artifacts" isVisible="false" />
+        <filter targetName="artifact.implementation:jar" isVisible="true" />
+        <filter targetName="build.all.artifacts" isVisible="true" />
+        <filter targetName="all" isVisible="true" />
+      </targetFilters>
+      <expanded value="true" />
+    </buildFile>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ift2255/Pays/Canada.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;class#Canada#0" />
+            <element signature="docComment;method#isProvinceCanadienCode#0;class#Canada#0" />
+            <element signature="method#isProvinceCanadienCode#0;class#Canada#0" />
+            <element signature="docComment;method#affichageCode#0;class#Canada#0" />
+            <element signature="method#affichageCode#0;class#Canada#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ArrayList.java" />
+    <entry file="file://$PROJECT_DIR$/test/ift2255/SeanceTest.java" />
+    <entry file="file://$PROJECT_DIR$/test/ift2255/LoginTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/ift2255/Lire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ift2255/Ecrire.java" />
+    <entry file="file://$PROJECT_DIR$/ant/build/build.xml" />
+    <entry file="file://$PROJECT_DIR$/gym.xml" />
+    <entry file="file://$PROJECT_DIR$/build_Mon_Jul_22_19-14-10_EDT_2019.xml" />
+    <entry file="file://$PROJECT_DIR$/src/ift2255/Professionnel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="114" selection-start-line="5" selection-start-column="114" selection-end-line="5" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ift2255/Membre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding>
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ift2255/formateur/NumberFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="91" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
+          <folding>
+            <element signature="docComment;class#NumberFormat#0" />
+            <element signature="docComment;method#versSeptChar#0;class#NumberFormat#0" />
+            <element signature="docComment;method#versNeufChar#0;class#NumberFormat#0" />
+            <element signature="docComment;method#versDeuxDecimal#0;class#NumberFormat#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/testX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1296">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release/Documentation/build.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ift2255/Compte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Compte#0" />
+            <element signature="docComment;method#getNom#0;class#Compte#0" />
+            <element signature="docComment;method#getID#0;class#Compte#0" />
+            <element signature="docComment;method#getAdresse#0;class#Compte#0" />
+            <element signature="docComment;method#getProvince#0;class#Compte#0" />
+            <element signature="docComment;method#getVille#0;class#Compte#0" />
+            <element signature="docComment;method#getCodePostal#0;class#Compte#0" />
+            <element signature="docComment;method#getCourriel#0;class#Compte#0" />
+            <element signature="docComment;method#setNom#0;class#Compte#0" />
+            <element signature="docComment;method#setAdresse#0;class#Compte#0" />
+            <element signature="docComment;method#setCodePostal#0;class#Compte#0" />
+            <element signature="docComment;method#setCourriel#0;class#Compte#0" />
+            <element signature="docComment;method#setProvince#0;class#Compte#0" />
+            <element signature="docComment;method#setVille#0;class#Compte#0" />
+            <element signature="docComment;method#affichage#0;class#Compte#0" />
+            <element signature="method#affichage#0;class#Compte#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release/Documentation/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="262" column="51" selection-start-line="262" selection-start-column="51" selection-end-line="262" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.java" />
+    <entry file="file://$PROJECT_DIR$/release/resources/Enregistrement/Inscription/22-07-2019/9990102_22-07-2019.txt" />
+    <entry file="file://$PROJECT_DIR$/src/ift2255/Inscription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="docComment;class#Inscription#0" />
+            <element signature="docComment;method#enregistrer#0;class#Inscription#0" />
+            <element signature="method#enregistrer#0;class#Inscription#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release/resources/Enregistrement/Inscription/22-07-2019/9990003_23-07-2019.txt" />
+    <entry file="file://$PROJECT_DIR$/release/resources/Enregistrement/Confirmation/22-07-2019/9990003_23-07-2019.txt" />
+    <entry file="file://$PROJECT_DIR$/src/ift2255/Confirmation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <element signature="docComment;class#Confirmation#0" />
+            <element signature="docComment;method#enregistrer#0;class#Confirmation#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="242" column="23" selection-start-line="242" selection-start-column="23" selection-end-line="242" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ift2255/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
+          <folding>
+            <element signature="docComment;class#Service#0" />
+            <element signature="method#Service#0;class#Service#0" />
+            <element signature="docComment;method#getSeance#0;class#Service#0" />
+            <element signature="method#getSeance#0;class#Service#0" />
+            <element signature="docComment;method#getListeSeances#0;class#Service#0" />
+            <element signature="docComment;method#getCodeService#0;class#Service#0" />
+            <element signature="docComment;method#getNomService#0;class#Service#0" />
+            <element signature="docComment;method#getNbSeances#0;class#Service#0" />
+            <element signature="docComment;method#addSeance#0;class#Service#0" />
+            <element signature="docComment;method#nbSeanceParPro#0;class#Service#0" />
+            <element signature="method#nbSeanceParPro#0;class#Service#0" />
+            <element signature="docComment;method#affichage#0;class#Service#0" />
+            <element signature="method#affichage#0;class#Service#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ift2255/Seance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="141" column="27" selection-start-line="141" selection-start-column="27" selection-end-line="141" selection-end-column="27" />
+          <folding>
+            <element signature="docComment;class#Seance#0" />
+            <element signature="docComment;method#Seance#0;class#Seance#0" />
+            <element signature="method#Seance#0;class#Seance#0" />
+            <element signature="docComment;method#afficherMembre#0;class#Seance#0" />
+            <element signature="method#afficherMembre#0;class#Seance#0" />
+            <element signature="docComment;method#getCodeSeance#0;class#Seance#0" />
+            <element signature="docComment;method#getCodeService#0;class#Seance#0" />
+            <element signature="docComment;method#getProID#0;class#Seance#0" />
+            <element signature="docComment;method#getDateHeureSeance#0;class#Seance#0" />
+            <element signature="docComment;method#isFraisParInscription#0;class#Seance#0" />
+            <element signature="docComment;method#getFrais#0;class#Seance#0" />
+            <element signature="docComment;method#getNowCapacite#0;class#Seance#0" />
+            <element signature="e#4163#4164#0" expanded="true" />
+            <element signature="e#4188#4189#0" expanded="true" />
+            <element signature="docComment;method#getCapaciteDispo#0;class#Seance#0" />
+            <element signature="docComment;method#setDateSeance#0;class#Seance#0" />
+            <element signature="method#setDateSeance#0;class#Seance#0" />
+            <element signature="docComment;method#setHeureSeance#0;class#Seance#0" />
+            <element signature="method#setHeureSeance#0;class#Seance#0" />
+            <element signature="docComment;method#setMaxCapacite#0;class#Seance#0" />
+            <element signature="docComment;method#setFraisParInscription#0;class#Seance#0" />
+            <element signature="docComment;method#setFraisParService#0;class#Seance#0" />
+            <element signature="docComment;method#setFrais#0;class#Seance#0" />
+            <element signature="docComment;method#inscrire#0;class#Seance#0" />
+            <element signature="docComment;method#isInscrit#0;class#Seance#0" />
+            <element signature="docComment;method#confirmer#0;class#Seance#0" />
+            <element signature="method#confirmer#0;class#Seance#0" />
+            <element signature="docComment;method#affichage#0;class#Seance#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/SeanceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ift2255/CentreDonnee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="442" column="77" selection-start-line="442" selection-start-column="77" selection-end-line="442" selection-end-column="77" />
+          <folding>
+            <element signature="docComment;class#CentreDonnee#0" />
+            <element signature="method#CentreDonnee#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#getService#0;class#CentreDonnee#0" />
+            <element signature="method#getService#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#getSeance#0;class#CentreDonnee#0" />
+            <element signature="method#getSeance#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#getPro#0;class#CentreDonnee#0" />
+            <element signature="method#getPro#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#getMembre#0;class#CentreDonnee#0" />
+            <element signature="method#getMembre#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#getMembreLogin#0;class#CentreDonnee#0" />
+            <element signature="method#getMembreLogin#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#getProLogin#0;class#CentreDonnee#0" />
+            <element signature="method#getProLogin#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#getNbCompte#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#getNbServices#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#addPro#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#addMembre#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#removeMembre#0;class#CentreDonnee#0" />
+            <element signature="method#removeMembre#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#removePro#0;class#CentreDonnee#0" />
+            <element signature="method#removePro#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#removeSeance#0;class#CentreDonnee#0" />
+            <element signature="method#removeSeance#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#getListePros#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#setListePros#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#getListeMembres#0;class#CentreDonnee#0" />
+            <element signature="method#getListeMembres#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#setListeMembres#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#getRepertoire#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#setRepertoire#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#validerMembre#0;class#CentreDonnee#0" />
+            <element signature="method#validerMembre#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#validerPro#0;class#CentreDonnee#0" />
+            <element signature="method#validerPro#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#seanceExiste#0;class#CentreDonnee#0" />
+            <element signature="method#seanceExiste#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#serviceExiste#0;class#CentreDonnee#0" />
+            <element signature="method#serviceExiste#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#creerSeances#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#creerService#0;class#CentreDonnee#0" />
+            <element signature="method#creerService#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#creerCompte#0;class#CentreDonnee#0" />
+            <element signature="method#creerCompte#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#codeSeanceGen#0;class#CentreDonnee#0" />
+            <element signature="method#codeSeanceGen#0;class#CentreDonnee#0" />
+            <element signature="docComment;method#affichageRepertoire#0;class#CentreDonnee#0" />
+            <element signature="method#affichageRepertoire#0;class#CentreDonnee#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ift2255/formateur/CalendarFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
+          <folding>
+            <element signature="docComment;class#CalendarFormat#0" />
+            <element signature="docComment;method#dateToStr#0;class#CalendarFormat#0" />
+            <element signature="method#dateToStr#0;class#CalendarFormat#0" />
+            <element signature="docComment;method#dateHeureToStr#0;class#CalendarFormat#0" />
+            <element signature="method#dateHeureToStr#0;class#CalendarFormat#0" />
+            <element signature="docComment;method#getCalendarObj#0;class#CalendarFormat#0" />
+            <element signature="docComment;method#getCalObjPourHeure#0;class#CalendarFormat#0" />
+            <element signature="method#getCalObjPourHeure#0;class#CalendarFormat#0" />
+            <element signature="docComment;method#heureToStr#0;class#CalendarFormat#0" />
+            <element signature="docComment;method#heureSansSecToStr#0;class#CalendarFormat#0" />
+            <element signature="docComment;method#getDayOfWeekInt#0;class#CalendarFormat#0" />
+            <element signature="docComment;method#daysBetween#0;class#CalendarFormat#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release/resources/Rapport/Professionnel/000000003/22-07-2019.txt" />
+    <entry file="file://$PROJECT_DIR$/release/resources/TEF/000000003.txt/22-07-2019" />
+    <entry file="file://$PROJECT_DIR$/release/resources/Enregistrement/Inscription/22-07-2019/9990203_23-07-2019.txt" />
+    <entry file="file://$PROJECT_DIR$/release/resources/Enregistrement/Confirmation/22-07-2019/9990303_23-07-2019.txt" />
+    <entry file="file://$PROJECT_DIR$/release/resources/Enregistrement/Confirmation/22-07-2019/9990203_23-07-2019.txt" />
+    <entry file="file://$PROJECT_DIR$/release/resources/Rapport/Gerant/22-07-2019.txt" />
+    <entry file="file://$PROJECT_DIR$/release/resources/Rapport/Membre/000000001/22-07-2019.txt" />
+    <entry file="file://$PROJECT_DIR$/release/resources/Rapport/Membre/000000002/22-07-2019.txt" />
+    <entry file="file://$PROJECT_DIR$/release/resources/TEF/000000003/22-07-2019.txt" />
+    <entry file="file://$PROJECT_DIR$/release/resources/Enregistrement/Inscription/22-07-2019/9990303_23-07-2019.txt" />
+    <entry file="file://$PROJECT_DIR$/src/ift2255/ProcedureComptable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="512" column="79" selection-start-line="512" selection-start-column="79" selection-end-line="512" selection-end-column="79" />
+          <folding>
+            <element signature="docComment;class#ProcedureComptable#0" />
+            <element signature="docComment;method#executerProc#0;class#ProcedureComptable#0" />
+            <element signature="docComment;method#lireFichier#0;class#ProcedureComptable#0" />
+            <element signature="method#lireFichier#0;class#ProcedureComptable#0" />
+            <element signature="e#8357#8422#1" />
+            <element signature="e#9336#9416#0" />
+            <element signature="e#9636#9680#0" />
+            <element signature="docComment;method#makeRapportPro#0;class#ProcedureComptable#0" />
+            <element signature="method#makeRapportPro#0;class#ProcedureComptable#0" />
+            <element signature="e#11392#11441#1" />
+            <element signature="e#13579#13623#0" />
+            <element signature="docComment;method#makeRapportMembre#0;class#ProcedureComptable#0" />
+            <element signature="method#makeRapportMembre#0;class#ProcedureComptable#0" />
+            <element signature="e#14793#14854#0" />
+            <element signature="e#15107#15200#1" />
+            <element signature="e#16872#16916#0" />
+            <element signature="docComment;method#makeRapportGerant#0;class#ProcedureComptable#0" />
+            <element signature="e#19822#19866#0" />
+            <element signature="docComment;method#makeTEF#0;class#ProcedureComptable#0" />
+            <element signature="e#21832#21876#0" />
+            <element signature="docComment;method#getRapportMembre#0;class#ProcedureComptable#0" />
+            <element signature="method#getRapportMembre#0;class#ProcedureComptable#0" />
+            <element signature="e#22578#22782#0" />
+            <element signature="e#22695#22743#1" />
+            <element signature="e#22815#22907#0" />
+            <element signature="e#22930#22974#0" />
+            <element signature="docComment;method#getRapportPro#0;class#ProcedureComptable#0" />
+            <element signature="method#getRapportPro#0;class#ProcedureComptable#0" />
+            <element signature="e#23709#23913#0" />
+            <element signature="e#23826#23874#1" />
+            <element signature="e#23946#24038#0" />
+            <element signature="e#24061#24105#0" />
+            <element signature="docComment;method#getRapportGerant#0;class#ProcedureComptable#0" />
+            <element signature="method#getRapportGerant#0;class#ProcedureComptable#0" />
+            <element signature="e#24697#24901#0" />
+            <element signature="e#24814#24862#1" />
+            <element signature="e#24934#25026#0" />
+            <element signature="e#25049#25093#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ift2255/Enregistrement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="83" selection-start-line="3" selection-start-column="83" selection-end-line="3" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ift2255/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="433" column="18" selection-start-line="433" selection-start-column="18" selection-end-line="433" selection-end-column="18" />
+          <folding>
+            <element signature="docComment;method#printMenu#0;class#Main#0" />
+            <element signature="method#printMenu#0;class#Main#0" />
+            <element signature="docComment;method#inscrireSeance#0;class#Main#0" />
+            <element signature="method#inscrireSeance#0;class#Main#0" />
+            <element signature="docComment;method#consulterInscrption#0;class#Main#0" />
+            <element signature="method#consulterInscrption#0;class#Main#0" />
+            <element signature="docComment;method#loginMembre#0;class#Main#0" />
+            <element signature="method#loginMembre#0;class#Main#0" />
+            <element signature="docComment;method#loginPro#0;class#Main#0" />
+            <element signature="method#loginPro#0;class#Main#0" />
+            <element signature="docComment;method#confirmerPresence#0;class#Main#0" />
+            <element signature="method#confirmerPresence#0;class#Main#0" />
+            <element signature="docComment;method#consulterRepertoire#0;class#Main#0" />
+            <element signature="method#consulterRepertoire#0;class#Main#0" />
+            <element signature="docComment;method#executerProcCompt#0;class#Main#0" />
+            <element signature="method#executerProcCompt#0;class#Main#0" />
+            <element signature="docComment;method#executerRapportGer#0;class#Main#0" />
+            <element signature="method#executerRapportGer#0;class#Main#0" />
+            <element signature="docComment;method#consulterRapportGerant#0;class#Main#0" />
+            <element signature="method#consulterRapportGerant#0;class#Main#0" />
+            <element signature="docComment;method#consulterRapportPro#0;class#Main#0" />
+            <element signature="method#consulterRapportPro#0;class#Main#0" />
+            <element signature="docComment;method#consulterRapportMembre#0;class#Main#0" />
+            <element signature="method#consulterRapportMembre#0;class#Main#0" />
+            <element signature="docComment;method#validerNumero#0;class#Main#0" />
+            <element signature="method#validerNumero#0;class#Main#0" />
+            <element signature="docComment;method#creerCompte#0;class#Main#0" />
+            <element signature="method#creerCompte#0;class#Main#0" />
+            <element signature="docComment;method#creerSeance#0;class#Main#0" />
+            <element signature="method#creerSeance#0;class#Main#0" />
+            <element signature="docComment;method#creerService#0;class#Main#0" />
+            <element signature="method#creerService#0;class#Main#0" />
+            <element signature="docComment;method#gererCompte#0;class#Main#0" />
+            <element signature="method#gererCompte#0;class#Main#0" />
+            <element signature="docComment;method#gererSeance#0;class#Main#0" />
+            <element signature="method#gererSeance#0;class#Main#0" />
+            <element signature="docComment;method#paiement#0;class#Main#0" />
+            <element signature="method#paiement#0;class#Main#0" />
+            <element signature="docComment;method#getSemaineDerniere#0;class#Main#0" />
+            <element signature="method#getSemaineDerniere#0;class#Main#0" />
+            <element signature="docComment;method#optionRetourMenu#0;class#Main#0" />
+            <element signature="method#optionRetourMenu#0;class#Main#0" />
+            <element signature="docComment;method#getJour#0;class#Main#0" />
+            <element signature="method#getJour#0;class#Main#0" />
+            <element signature="docComment;method#aideEntrerJour#0;class#Main#0" />
+            <element signature="method#aideEntrerJour#0;class#Main#0" />
+            <element signature="docComment;method#taperEnter#0;class#Main#0" />
+            <element signature="method#taperEnter#0;class#Main#0" />
+            <element signature="docComment;method#mauvaisCommande#0;class#Main#0" />
+            <element signature="method#mauvaisCommande#0;class#Main#0" />
+            <element signature="docComment;method#courrielValide#0;class#Main#0" />
+            <element signature="method#courrielValide#0;class#Main#0" />
+            <element signature="docComment;method#codePostalValide#0;class#Main#0" />
+            <element signature="method#codePostalValide#0;class#Main#0" />
+            <element signature="docComment;method#isLettre#0;class#Main#0" />
+            <element signature="docComment;method#isChiffre#0;class#Main#0" />
+            <element signature="method#isChiffre#0;class#Main#0" />
+            <element signature="docComment;method#allLettresSpace#0;class#Main#0" />
+            <element signature="method#allLettresSpace#0;class#Main#0" />
+            <element signature="docComment;method#newLine#0;class#Main#0" />
+            <element signature="method#newLine#0;class#Main#0" />
+            <element signature="docComment;method#afficherCharLimit#0;class#Main#0" />
+            <element signature="method#afficherCharLimit#0;class#Main#0" />
+            <element signature="docComment;method#cutStringToLimit#0;class#Main#0" />
+            <element signature="method#cutStringToLimit#0;class#Main#0" />
+            <element signature="docComment;method#initSystem#0;class#Main#0" />
+            <element signature="method#initSystem#0;class#Main#0" />
+            <element signature="docComment;method#saveSystem#0;class#Main#0" />
+            <element signature="method#saveSystem#0;class#Main#0" />
+            <element signature="method#main#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Implementation:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Implementation</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+﻿Risques par ordre de sévérité
+
+1. Puisque les données sont entrées dans la console (la ligne de commande), l'agent ne peut seulement entrer qu'une
+    donnée à la fois. Ne pas connaître l'ordre des entrées peut entraîner des erreurs, puis l'arrêt du système.
+    (Un agent devra apprendre comment utiliser le système, il lui faut un manuel d'utilisation).
+
+2. Risque d'un étranger au contrôle du système sans la permission de l'agent. Aucun critère ou code d'accès assigné
+    à l'agent pour valider son entrée au système. L'étranger pourra accéder à toutes les données du système.
+
+3. En assumant que le système est installé sur seulement une machine, si cette machine se brise ou ne fonctionne plus
+    pour des raisons quelconques, on risque de perdre le système totalement.
+
+4. Puisque les comptes des membres et des professionnels sont identifiés par leur numéro unique seulement, les cas
+    de fraude et de vol d'identité risquent la sécurité des clients du #GYM.
+
+5. Il n'y a pas de mécanismes de modification après la création d'une séance. Donc, si l'agent crée une séance avec les
+    mauvaises informations, des clients vont s'enregistrer à une séance que le professionnel n'a pas voulu créer.

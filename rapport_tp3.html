@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFT2255 TP3 Rapport</title>
+    <style>
+
+        figcaption {
+            margin:0px;
+            margin-top:5px;
+            padding:0px;
+            border:0px;
+            border-top:5px;
+            font-size:12px;
+            font-weight:bold;
+        }
+
+        figure {
+            border:0px;
+            border-bottom:5px;
+            padding:0px;
+        }
+
+        .new {
+            color:red;
+            font-size:12px;
+            font-weight:bold;
+        }
+
+        img {
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+
+        .diagramme {
+            margin: 0px auto auto;
+            background-color: #e0eff9;
+
+            border-style:solid;
+            border-width:0px;
+            border-color: #ADD8E6;
+            padding:10px;
+            border-radius:3px;
+            margin-bottom:10px;
+
+            width:1300px;
+        }
+
+        body {
+            margin: 0px auto auto;
+            background-color: #4771A5;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 23px;
+        }
+
+        table {
+            border: outset 2px black;
+            border-collapse: collapse;
+        }
+
+        th {
+            border-bottom: double 2px black;
+        }
+
+        td {
+            border-bottom: solid 1px black;
+            text-align: center;
+        }
+
+        .first_col {
+            border-right: double 2px black;
+        }
+
+        a {
+            color: navy;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        li {
+            padding-bottom: 5px;
+        }
+
+        .title {
+            color: #8b0000;
+            font-weight: bold;
+        }
+
+        .scenario {
+            padding-left: 25px;
+        }
+
+        .tache {
+            margin: 0px auto auto;
+            width: 950px;
+            text-align:justify;
+
+            background-color: #e0eff9;
+
+            border-style:solid;
+            border-width:0px;
+            border-color: #ADD8E6;
+            padding:10px;
+            padding-left:20px;
+            padding-right:20px;
+            padding-bottom:20px;
+            padding-top:20px;
+            margin-bottom:10px;
+            border-radius:3px;
+        }
+
+        dt {
+            padding-top: 5px;
+            font-weight:bold;
+        }
+
+        hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-top:10px;">
+        <div class="tache" style="text-align: center;">
+            <h1>IFT 2255 - Été 2019 - Devoir 3</h1>
+            <p style="font-size:12px;"><i>Style de page inspiré des énoncés des TPs du cours.</i></p>
+        </div>
+
+        <div class="tache" id="tableContent">
+            <h2>Table des matières</h2>
+            <ul>
+                <li><a href="#infoGeneral">Information générale</a></li>
+                <li><a href="#distributionTaches">Distribution des tâches</a></li>
+                <li><a href="#remarque">Remarques et hypothèse globale</a></li>
+            </ul>
+            <ol>
+                <h4>TP-1</h4>
+                <li><a href="#tache1">Tâche 1: Glossaire </a><span class="new">MODIFIÉ!</span></li>
+                <li><a href="#tache2">Tâche 2: Diagramme de CUs UML </a><span class="new">MODIFIÉ!</span></li>
+                <li><a href="#tache3">Tâche 3: Scénarios des CUs </a><span class="new">MODIFIÉ!</span></li>
+                <li><a href="#tache4">Tâche 4: Risques</a></li>
+                <li><a href="#tache5">Tâche 5: Exigences non-fonctionnelles </a><span class="new">MODIFIÉ!</span></li>
+                <li><a href="#bonusTP1">Tâche Bonus TP1: Prototype</a></li>
+                <h4>TP-2</h4>
+                <li><a href="#tache6">Tâche 6: Analyse</a></li>
+                <li><a href="#tache7">Tâche 7: Diagrammes d'activités </a><span class="new">MODIFIÉ!</span></li>
+                <li><a href="#tache8">Tâche 8: Diagramme de classe </a><span class="new">MODIFIÉ!</span></li>
+                <li><a href="#tache9">Tâche 9: Diagrammes de séquence </a><span class="new">MODIFIÉ!</span></li>
+                <li><a href="#tache10">Tâche 10: Prototype</a></li>
+                <h4>TP-3</h4>
+                <li><a href="#tache11">Tâche 11: Implémentation </a><span class="new">NEW!</span></li>
+                <li><a href="#tache12">Tâche 12: Tests unitaires </a><span class="new">NEW!</span></li>
+                <li><a href="#tache13">Tâche 13: Livraison et documentation </a><span class="new">NEW!</span></li>
+            </ol>
+        </div>
+
+        <div class="tache" id="infoGeneral">
+            <h1>Équipe 6</h1>
+            <h2>Information générale</h2>
+            <p> <!-- Membre #1 -->
+                <span style="font-weight: bold;">Nom: </span>Adrien Adam<br>
+                <span style="font-weight: bold;">Matricule (4 dernier chiffre): </span>7980<br>
+                <span style="font-weight: bold;">Courriel: </span>adrien.adam@umontreal.ca<br>
+                <span style="font-weight: bold;">temps mis: </span>15 heures
+            </p>
+            <p> <!-- Membre #2 -->
+                <span style="font-weight: bold;">Nom: </span>Soumaila Keita<br>
+                <span style="font-weight: bold;">Matricule (4 dernier chiffre): </span>5670<br>
+                <span style="font-weight: bold;">Courriel: </span>soumaila.keita@umontreal.ca<br>
+                <span style="font-weight: bold;">temps mis: </span>15 heures
+            </p>
+            <p> <!-- Membre #3 -->
+                <span style="font-weight: bold;">Nom: </span>Tina Liu<br>
+                <span style="font-weight: bold;">Matricule (4 dernier chiffre): </span>2684<br>
+                <span style="font-weight: bold;">Courriel: </span>tina.liu@umontreal.ca<br>
+                <span style="font-weight: bold;">temps mis: </span>30 heures
+            </p>
+        </div>
+        <div class="tache" id="distributionTaches">
+            <h2>Distribution des tâches</h2>
+            <p>
+                <span style="font-weight: bold;">Soumissionaire: </span>Tina Liu
+            </p>
+            <table cellpadding="7px">
+                <thead>
+                <tr>
+                    <th class="first_col">
+                        Tâche
+                    </th>
+                    <th>
+                        Adrien
+                    </th>
+                    <th>
+                        Soumaila
+                    </th>
+                    <th>
+                        Tina
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="first_col">
+                        Révision des exigences
+                    </td>
+                    <td> <!-- Membre #1 -->
+                        10
+                    </td>
+                    <td> <!-- Membre #2 -->
+                        10
+                    </td>
+                    <td> <!-- Membre #3 -->
+                        80
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first_col">
+                        Révision de l'analyse
+                    </td>
+                    <td> <!-- Membre #1 -->
+                        30
+                    </td>
+                    <td> <!-- Membre #2 -->
+                        10
+                    </td>
+                    <td> <!-- Membre #3 -->
+                        60
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first_col">
+                        Implémentation
+                    </td>
+                    <td> <!-- Membre #1 -->
+                        25
+                    </td>
+                    <td> <!-- Membre #2 -->
+                        25
+                    </td>
+                    <td> <!-- Membre #3 -->
+                        50
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first_col">
+                        Tests unitaires
+                    </td>
+                    <td> <!-- Membre #1 -->
+                        33
+                    </td>
+                    <td> <!-- Membre #2 -->
+                        33
+                    </td>
+                    <td> <!-- Membre #3 -->
+                        33
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first_col">
+                        Livraison et documentation
+                    </td>
+                    <td> <!-- Membre #1 -->
+                        10
+                    </td>
+                    <td> <!-- Membre #2 -->
+                        60
+                    </td>
+                    <td> <!-- Membre #3 -->
+                        30
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <img src="GraphCommits_TP3.PNG" width="900px" style="margin-left:auto;margin-right:auto;display:block;width:75%">
+
+        <div class="tache" id="remarque">
+            <h2>Réflexion</h2>
+            <p>
+                On aurait pu utiliser des structures de données plus efficaces dans la classe CentreDonnée.
+            </p>
+            <p>
+                On aurait pu utiliser des méthodes qui isole l'utilisateur des System.out.println comme
+                print(str:String). Avec des print partout, ça peut devenir difficile pour la maintenance. Entre autre,
+                il y a beaucoup de répétitions de code. Un re-factoring sera utile pour le bien de la maintenance.
+            </p>
+            <p>
+                On aurait pu implémenter les classes Inscription et
+                Confirmation comme des structures de données. Ceci permettrait une hausse de l'accessibilité au rapport
+                par la communauté.
+            </p>
+            <p>
+                Il manque des exceptions pour gérer certains cas.
+                La création de compte et de séance n'a aucune contrainte quant au nombre d'instantiations stockées dans
+                le système. Donc, si le nombre de compte atteint cent millions, il n'y a aucune manière de la gérer et
+                c'est à l'équipe de maintenance de réviser cela.
+            </p>
+            <h2>Remarque (révision des exigences)</h2>
+            <p>
+                Un mot-clé a été ajouté au glossaire. Des ajouts et des ajustements ont été faits sur le diagramme de CU.
+            </p>
+            <p>
+                Il faut comprendre que les exceptions ne sont pas encore gérées lorsqu'il y a des fautes humaines de la
+                part des utilisateurs du programme.
+            </p>
+            <h2>Hypothèses</h2>
+            <p>
+                Quand l'agent entre la date de début du service, le jour de cette date doit correspondre à un des jours
+                de la récurrence hebdomadaire.
+            </p>
+            <p>
+                Pour l'affichage des frais de service après l'inscription à un séance, on a compris que ce sont les frais
+                que #GYM doit payer au professionnel approprié et non pas les frais que le membre inscrit doit payer.
+            </p>
+            <p>
+                Quand quelqu'un veut consulter un rapport, seulement le rapport de la semaine passée est accessible.
+                Donc, s'il n'y a pas de rapport pour la semaine passée, aucun rapport n'est affiché.
+            </p>
+            <p>
+                On suppose que l'agent qui travaille sur la console sait très bien comment utiliser le programme.
+                Les erreurs/exceptions ne sont pas gérées par le programme.
+            </p>
+            <p>
+                L'exécution du rapport de synthèse par le gérant va générer le fichier de rapport de la semaine
+                complète la plus récente.
+            </p>
+            <p>
+                #GYM n'est ouvert que du lundi au vendredi. Les horaires de séances des membres et des professionnels
+                ne sont pas gérés par le système. C'est les individus qui le gère eux-mêmes.
+            </p>
+            <p>
+                Tous CUs qui doivent ou peuvent se faire sur l'application mobile #GYM nécessitent la connexion de
+                l'individu. On suppose à partir de cette première hypothèse que le membre peut aller chercher son code
+                QR n'importe quand durant la période de connexion et d'utilisation de l'application.
+            </p>
+            <p>
+                On suppose que les CUs sont nos objectifs principales à documentés. Les cas qui sont reliés à la gestion
+                d'un objet ne sont pas documentés dans le diagramme de CU, mais le sont dans les diagrammes d'analyse et de
+                conception.
+            </p>
+			<p>
+				On suppose que le gérant et l'agent se connecte à leur machine dans laquelle le système est installé.
+                Donc, pour cette implémentation en particulier, il ne sera pas nécessaire d'authentifier ces types
+                d'individus. Aucun détail n'a été donné.
+			</p>
+        </div>
+
+        <div class="tache" id="tache1"> <!-- GLOSSARY -->
+            <h2>Tâche 1: Glossaire</h2>
+            <p>
+                Pour le glossaire, on a décidé de définir des mots-clés qui reviennent quelques à plusieurs fois dans les tâches
+                du premier TP et qui reviendront certainement durant le processus de développement.
+            </p>
+            <h3>Solution</h3>
+            <div> <!-- TP-3 -->
+                <h4 style="color:red;">Nouveau</h4>
+				<dl>
+					<dt><b>Code QR</b></dt>
+					<dd>Un code qui est associé au numéro unique d’un membre.</dd>
+				</dl>
+            </div>
+            <a href="#tableContent">Table des matières</a>
+            <hr>
+            <div>
+                <h5>TP-2</h5>
+                <dl>
+                    <dt><b>Frais mensuels d'adhésion</b></dt>
+                    <dd>
+                        Le montant à payer à chaque mois pour continuer d’être un membre valide de #GYM.
+                    </dd>
+
+                    <dt><b>Frais d'inscription</b></dt>
+                    <dd>
+                        Le montant à payer pour assister à une séance de service fourni par un professionnel.
+                    </dd>
+
+                    <dt><b>Gérant</b></dt>
+                    <dd>
+                        Un individu est responsable du #GYM et de tout ce qui se passe dans le #GYM. Superviseur/employeur de l’agent.
+                    </dd>
+
+                    <dt>Compte payable</dt>
+                    <dd>
+                        Un compte qui doit être payé, c’est-à-dire un compte qui a fourni un service durant une semaine payable.
+                    </dd>
+
+                    <dt>TEF</dt>
+                    <dd>
+                        Abréviation de <i>Transfert électronique de fond</i>.
+                    </dd>
+
+                    <dt>Transfert électronique de fond</dt>
+                    <dd>
+                        Un fichier qui contient les données de transfert électronique de
+                        fond. Il contient le nom d’un professionnel, le numéro unique du professionnel et le montant à lui payer
+                        pour les séances fournies durant une semaine donnée.
+                    </dd>
+
+                    <dt>Rapport de gérant</dt>
+                    <dd>
+                        Fichier qui contient la synthèse des évènements et des comptes payables.
+                        Une liste de professionnel à payer, ainsi que le nombre total de services fournis durant la semaine et
+                        le total de leurs frais. À la fin, on voit le nombre de professionnels qui ont fourni un service durant la
+                        semaine, le nombre total de service fournis et le total des frais.
+                    </dd>
+
+                    <dt>Procédure comptable</dt>
+                    <dd>
+                        Procès qui est exécutée au Centre des Données #GYM chaque vendredi à minuit
+                        pour calculer les frais à payer aux professionnels qui ont fourni un/des service(s) durant la semaine
+                        et enregistre le résultat et d’autres informations nécessaires dans un fichier TEF. D’autre part,
+                        un rapport de synthèse du gérant qui concerne les comptes payables de la semaine et d’autres informations
+                        pertinentes sur la semaine est également exécuté avec les TEF.
+                    </dd>
+
+                    <dt>RnB</dt>
+                    <dd>
+                        Organisation tierce qui est responsable du traitement des paiements des frais d’adhésion.
+                    </dd>
+                </dl>
+            </div> <!-- TP-2 -->
+            <a href="#tableContent">Table des matières</a>
+            <hr>
+            <div>
+                <h5>TP-1</h5>
+                <dl>
+                    <dt><b>Agent</b></dt>
+                    <dd>
+                        Personnel de #GYM travaillant à la réception du centre. C’est auprès de lui que le client peut adhérer à #GYM.
+                        L’agent permet aussi au client de s’inscrire à des séances de sports ou des services fournis par des professionnels.
+                    </dd>
+                    <dt><b>Centre de données</b></dt>
+                    <dd>Endroit où toutes les données de tous les clients seront stockées.</dd>
+
+                    <dt><b>Réception</b></dt>
+                    <dd>
+                        Le poste à partir d’où le Centre de Données est accédé en majorité pour des cas d’utilisations par l’agent.
+                    </dd>
+
+                    <dt><b>Adhérer (à #GYM)</b></dt>
+                    <dd>
+                        Pour faire partie du centre, le client doit s’enregistrer à la réception.
+                        Il donne ses informations personnelles à l’agent, qui sera acheminé au Centre de Données.
+                    </dd>
+
+                    <dt><b>Numéro unique</b></dt>
+                    <dd>Identification d’un membre de #GYM.</dd>
+
+                    <dt><b>Professionnel</b></dt>
+                    <dd>
+                        Enregistré dans le Centre de Données similairement à un membre. Individu qui offre un/des
+                        service(s) au #GYM et possède le privilège de consulter la/les liste(s) d’inscriptions à sa/ses séance(s).
+                    </dd>
+
+                    <dt><b>Inscription</b></dt>
+                    <dd>
+                        Le client peut s’inscrire aux services d’un professionnel et/ou à un cours de sport. Pour se
+                        faire, le client doit se référer à la réception. L’agent lui montre l’ensemble séances disponibles dans le
+                        Répertoire des Services. Le client doit confirmer son inscription quand il sélectionne une séance.
+                        Il faut vérifier s’il n’y a pas de conflit d’horaire avec les séances dont le client va assister.
+                    </dd>
+
+                    <dt><b>Validation</b></dt>
+                    <dd>
+                        L’agent vérifie le numéro de membre du client pour valider l’accès du client, à chaque visite.
+                        Si l’abonnement est expiré, « Numéro invalide » sera affiché. Si le membre est suspendu, alors « Membre suspendu »
+                        sera affiché. S’il n’y a ni l’un ni l’autre, alors l’accès sera validé. Cette information sera vérifié dans
+                        le Centre de Données.
+                    </dd>
+
+                    <dt><b>Répertoire des Services</b></dt>
+                    <dd>
+                        Endroits où toutes les séances disponibles sont stockées.
+                    </dd>
+
+                    <dt><b>Fournir un service</b></dt>
+                    <dd>
+                        Un professionnel doit voir l’agent pour que celui-ci créer une séance de service ou d’activité.
+                        L’information sera stockée dans le Centre de Données. Si le professionnel est nouveau, l’agent lui créer un
+                        compte comme un client.
+                    </dd>
+
+                    <dt><b>Activités physiques</b></dt>
+                    <dd>
+                        On entend par activité physique tout mouvement produit par les muscles squelettiques,
+                        responsable d’une augmentation de la dépense énergétique.
+                    </dd>
+
+                    <dt><b>Séance de service</b></dt>
+                    <dd>
+                        Une période d’activité (physique ou non), ou de consultation donnée par un professionnel,
+                        identifiée par un code de service
+                    </dd>
+
+                    <dt><b>Code de service</b></dt>
+                    <dd>
+                        Séquence de 7 chiffres qui identifie une séance de service.
+                    </dd>
+
+                    <dt><b>Consultation de service</b></dt>
+                    <dd>
+                        L’agent montre au professionnel les inscriptions à sa séance. Une requête est envoyé
+                        au Centre de Données pour vérifier cette information.
+                    </dd>
+
+                    <dt><b>Confirmation</b></dt>
+                    <dd>
+                        Le client doit confirmer sa présence avant qu’une séance commence. L’agent confirme la présence
+                        dans le Répertoire des Services. En faisant cela, une requête est envoyée au Centre de Données pour vérifier
+                        si l’inscription est valide.
+                    </dd>
+                </dl>
+            </div> <!-- TP-1 -->
+            <a href="#tableContent">Table des matières</a>
+        </div>
+
+        <div class="tache" id="tache2"> <!-- USE-CASE DIAGRAM -->
+            <h2>Tâche 2: Diagramme des cas d'utilisation UML</h2>
+            <h3>Solution</h3>
+            <div>
+                <h4 style="color:red;">Nouvelle version</h4>
+                <img src="Exigences/CU/TP3_Diagram_CU.jpg" style="margin-left:auto;margin-right:auto;display:block;width:100%">
+            </div>
+            <br>
+            <a href="#tableContent">Table des matières</a>
+        </div>
+
+        <div class="tache" id="tache3"> <!-- SCENARIOS -->
+            <h2>Tâche 3: Scénarios des cas d'utilisation</h2>
+            <h3>Solution</h3>
+            <div>
+                <h4 style="color:red;">Nouveau</h4>
+                <div>
+                    <h5>Relié au TP3</h5>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Se connecter sur l’application mobile<br>
+                        <span class="title">But:</span> Exécuter/Utiliser les autres CUs/fonctionnalités de l’application mobile.<br>
+                        <span class="title">Acteurs:</span> Un invidivu ayant un compte soit membre ou professionnel (principal)<br>
+                        <span class="title">Préconditions:</span> L’individu concerné a un compte membre/professionnel à #GYM.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1. Entrer son courriel dans le champ approprié.<br>
+                            2. Le système de Centre de Données cherche le numéro unique associé au courriel.
+                            <div class="scenario">
+                                2.1. Le numéro unique est trouvé.<br>
+                                2.2. Aller au CU « Valider un numéro unique ».
+                                <div class="scenario">
+                                    2.2.1. Le numéro unique est valide et l’écran affiche le succès « Validé ».
+                                </div>
+                            </div>
+                            3. L’individu est connecté à son compte
+                        </div>
+                        <span class="title">Scénario alternatif:</span>
+                        <div class="scenario">
+                            2.2.a. Le courriel est invalide.<br>
+                            <div class="scenario">
+                                2.2.a.1. Afficher l’échec « Numéro invalide ». Sinon, arrêter le CU.
+                            </div>
+                            2.2.b. Le courriel est valide, mais le compte est suspendu.
+                            <div class="scenario">
+                                2.2.b.1. Afficher l’échec « Membre suspendu ». Sinon, arrêter le CU.
+                            </div>
+                        </div>
+                        <span class="title">Post-conditions:</span>L’application affiche sur l’écran les options de CUs
+                        associées au type de compte et  l’individu peut les exécuter.
+                    </div> <!-- Se connecteur sur l'application mobile -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Connexion d’un professionnel sur l’application mobile<br>
+                        <span class="title">But:</span> Exécuter/Utiliser les CUs/fonctionnalités accessibles au professionnel.<br>
+                        <span class="title">Acteurs:</span>Le professionnel (principal)<br>
+                        <span class="title">Préconditions:</span> Le compte professionnel est valide dans le Centre de Données.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1. Ouvrir l’application mobile et afficher les types de connexion.<br>
+                            2. Choisir la Connexion Professionnel.<br>
+                            3. Aller au CU « Se connecter sur l’application mobile ».<br>
+                            4. Le professionnel est connecté sur l’application mobile.
+                        </div>
+                        <span class="title">Scénario alternatif:</span>
+                        <div class="scenario">
+                            2.a. L’individu a fait un erreur et voulait choisir un autre type de connexion. Retourner à
+                            l’étape 1.
+                        </div>
+                        <span class="title">Post-conditions:</span>L’application affiche sur l’écran les choix de CUs
+                        pour un professionnel.
+                    </div> <!-- Connexion d'un professionnel sur l'application mobile -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Connexion d’un membre sur l’application mobile<br>
+                        <span class="title">But:</span> Exécuter/Utiliser les CUs/fonctionnalités accessibles au membre.<br>
+                        <span class="title">Acteurs:</span>Le membre (principal)<br>
+                        <span class="title">Préconditions:</span> Le compte membre est valide dans le Centre de Données<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1. Ouvrir l’application mobile et afficher les types de connexion.<br>
+                            2. Choisir la Connexion Membre.<br>
+                            3. Aller au CU « Se connecter sur l’application mobile ».<br>
+                            4. Le membre est connecté sur l’application mobile.
+                        </div>
+                        <span class="title">Scénario alternatif:</span>
+                        <div class="scenario">
+                            2.a. L’individu a fait un erreur et voulait choisir un autre type de connexion. Retourner à
+                            l’étape 1.
+                        </div>
+                        <span class="title">Post-conditions:</span>L’application affiche le nom du membre, son numéro
+                        unique et son code QR, et quelque part d’autre sur l’écran les autres choix de CUs pour un membre.
+                    </div> <!-- Connexion d'un membre sur l'application mobile -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Accéder au code QR via l’application mobile<br>
+                        <span class="title">But:</span> Afficher le code QR et l’utiliser pour confirmer son inscription à une séance<br>
+                        <span class="title">Acteurs:</span> Le membre (principal)<br>
+                        <span class="title">Préconditions:</span> Le membre possède un compte valide dans le Centre de Données. <br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1. Si le membre n’est pas connecté sur l’application mobile.<br>
+                            <div class="scenario">
+                                1.1. Aller au CU « Connexion membre sur l’application mobile ».
+                            </div>
+                            2. Si le membre est connecté.<br>
+                            <div class="scenario">
+                                2.1. Dans la section où est affiché les options de CUs d’un membre, sélectionnez
+                                « Obtenir code QR ».
+                            </div>
+                            3. Afficher sur l’écran le nom du membre, son numéro unique et son code QR associé.
+                        </div>
+                        <span class="title">Post-conditions:</span>Aucune.
+                    </div> <!-- Accéder au code QR via l'application mobile -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Ouvrir le tourniquet avec l’application mobile.<br>
+                        <span class="title">But:</span> Accéder/utiliser/visiter le #GYM.<br>
+                        <span class="title">Acteurs:</span> Le membre (principal)<br>
+                        <span class="title">Préconditions:</span> Le membre a un compte valide. Le lecteur de code QR
+                        fonctionne corrêtement et sans faute.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1. Aller au CU « Accéder au code QR via l’application mobile ».<br>
+                            2. Placer son code QR près du lecteur de code QR placé sur le tourniquet.<br>
+                            <div class="scenario">
+                                2.1. L’accès est permis.
+                            </div>
+                            3. Le tourniquet s’ouvre. Le membre entre.
+                        </div>
+                        <span class="title">Scénario alternatif:</span>
+                        <div class="scenario">
+                            1.a. L’individu n’a pas de compte valide. S’il désire s’adhérer à #GYM, aller au CU « Créer
+                            un compte membre ».
+                            <div class="scenario">
+                                1.a.1. Retourner à l’étape 1.
+                            </div>
+                            1.b. Le membre est suspendu. Arrêter le CU.
+                        </div>
+                        <span class="title">Post-conditions:</span>Aucune.
+                    </div> <!-- Ouvrir le tourniquet avec l'application mobile -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Consulter le Répertoire de Services via
+                        l’application mobile.<br>
+                        <span class="title">But:</span> Consulter le Répertoire de Services à sa liberté<br>
+                        <span class="title">Acteurs:</span>Un membre (principal)<br>
+                        <span class="title">Préconditions:</span> Le membre est connecté sur l’application mobile et
+                        le Centre de Données fonctionne correctement.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1. Sélectionner « Consulter les services offerts ».<br>
+                            <div class="scenario">
+                                1.1. Les services sont affichés sur l’écran.
+                            </div>
+                            2. Sélectionner un service par son code de service ou faire un retour à l’étape 1.<br>
+                            <div class="scenario">
+                                2.1. Les séances de ce service sont affichées sur l’écran.
+                            </div>
+                            3. Sélectionner une séance par son code de séance ou faire un retour à l’étape 2/3.
+                            <div class="scenario">
+                                3.1. Les informations sur cette séance sont affichées sur l’écran.
+                            </div>
+                        </div>
+                        <span class="title">Post-conditions:</span>Aucune.
+                    </div> <!-- Consulter le Répertoire de Services via l'application mobile -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> S’inscrire à une séance via l’application mobile<br>
+                        <span class="title">But:</span> Le membre veut participer à une séance<br>
+                        <span class="title">Acteurs:</span>Le membre (principal)<br>
+                        <span class="title">Préconditions:</span> Le membre est connecté sur l’application mobile et
+                        gère son horaire lui-même.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1. Aller au CU « Consulter le Répertoire de Services via l’application mobile ».<br>
+                            <div class="scenario">
+                                1.1. Les informations sur une séance sont affichées à l’écran.
+                            </div>
+                            2. Sélectionner « S’inscrire ».<br>
+                            3. Le rapport est affiché sur l’écran.
+                            <div class="scenario">
+                                3.1. Le Centre de Données valide l’inscription.<br>
+                                3.2. Le Centre de Données enregistre cette inscription sur le disque dur.
+                            </div>
+                            4. Le succès est affiché sur l’écran.
+                        </div>
+                        <span class="title">Scénerio alternatif:</span>
+                        <div class="scenario">
+                            3.1.a. La séance atteint sa capacité maximal.
+                            <div class="scenario">
+                                3.1.a.1. Afficher l’échec et demander si le membre désire consulter d’autres 			séances.
+                                3.1.a.2. Si oui, retourner à l’étape 1. Sinon, arrêter le CU.
+                            </div>
+                        </div>
+                        <span class="title">Post-conditions:</span>Le numéro unique du membre est ajouté à la liste d’inscriptions de la séance.
+                    </div> <!-- S'inscrire à une séance via l'application mobile -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Confirmer la présence à une séance via l’application
+                        mobile<br>
+                        <span class="title">But:</span> Confirmer qu’un membre est en fait inscrit à la séance.<br>
+                        <span class="title">Acteurs:</span>Le membre (secondaire) et le professionnel en charge (principal)<br>
+                        <span class="title">Préconditions:</span> Le membre et le professionnel sont connectés sur
+                        l’application mobile. Le lecteur de code QR sur l’application du professionnel fonctionne
+                        correctement. Ils sont face à face.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1. Pour le professionnel, aller au CU « Consulter le Répertoire de Services via
+                            l’application mobile » pour aller chercher la séance. <br>
+                            <div class="scenario">
+                                1.1. Sélectionner « Confirmer inscription ».
+                                <div class="scenario">
+                                    1.1.1. L’application active le lecteur de code QR.
+                                </div>
+                            </div>
+                            2. Pour le membre, aller au CU « Accéder au code QR ».<br>
+                            <div class="scenario">
+                                2.1. Le nom du membre, son numéro de compte et son code QR sont affichés sur
+                                l’écran.
+                            </div>
+                            3. Le membre amène son code QR affiché près du lecteur de code QR installé sur
+                            l’application mobile du professionnel.
+                            <div class="scenario">
+                                3.1. Le lecteur lit le code QR et le traduit en numéro unique.<br>
+                                3.2. Le système vérifie que le numéro unique est dans la liste des inscriptions 			dans la séance.
+                                <div class="scenario">
+                                    3.2.1. L’inscription est valide.
+                                </div>
+                                3.3. « Validé » est affiché sur l’écran du professionnel.<br>
+                                3.4. Un enregistrement est généré sur le disque dur sur la confirmation.
+                            </div>
+                        </div>
+                        <span class="title">Scénario alternatif:</span>
+                        <div class="scenario">
+                            3.2.a. L’inscription n’est pas valide. Donc, le membre se voit refuser l’accès. Arrêter
+                            le 	CU.
+                        </div>
+                        <span class="title">Post-conditions:</span>L’inscription du membre à la séance est confirmé
+                        sur le système.
+                    </div> <!-- Confirmer la présence à une séance via l'application mobile -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Consulter la liste des inscriptions à une séance
+                        via l’application mobile<br>
+                        <span class="title">But:</span> Permettre au professionnel de consulter la liste des inscriptions
+                        à ses séances.<br>
+                        <span class="title">Acteurs:</span>Professionnel (principal)<br>
+                        <span class="title">Préconditions:</span> Le professionnel est connecté sur l’application mobile
+                        et sa séance existe. Et l’application mobile et le système de données fonctionne correctement.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1. Sélectionner la section/onglet pour la consultation des listes d’inscriptions.<br>
+                            <div class="scenario">
+                                1.1. La liste des séances qu’il fourni (code de séance) est affichée sur l’écran.
+                            </div>
+                            2. Sélectionner une séance et confirmer qu’il veut consulter la liste des inscriptions.<br>
+                            <div class="scenario">
+                                2.1. Une reqête est envoyée au Centre de Données avec le code de séance.
+                                <div class="scenario">
+                                    2.1.1. La requête est reçu et le Centre de Données répond avec
+                                    la liste d’inscriptions.
+                                </div>
+                                2.2. La liste des inscriptions (numéro unique des membres) est affichée sur
+                                l’écran.
+                            </div>
+                        </div>
+                        <span class="title">Post-conditions:</span>Aucune.
+                    </div> <!-- Consulter la liste des inscriptions à une séance via l'application mobile -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Consulter le rapport membre/professionnel de la
+                        semaine via l’application mobile<br>
+                        <span class="title">But:</span> Consulter son rapport de la semaine.<br>
+                        <span class="title">Acteurs:</span>Professionnel/membre (principal)<br>
+                        <span class="title">Préconditions:</span> Le professionnel/membre est connecté sur l’application
+                        mobile. Le rapport de la semaine est disponible.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1. Sélectionner la section/onglet « Rapport semaine ».<br>
+                            <div class="scenario">
+                                1.1. La liste des derniers rapports semaine est affichée sur l’écran.
+                            </div>
+                            2. Sélectionner un rapport.<br>
+                            <div class="scenario">
+                                2.1. L’application va chercher le fichier approprié.
+                            </div>
+                            3. Le rapport est affiché sur l’écran.
+                        </div>
+                        <span class="title">Post-conditions:</span>Aucune.
+                    </div> <!-- Consulter le rapport membre/professionnel de la semaine via l'application mobile -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Exécuter procédure comptable<br>
+                        <span class="title">But:</span> Créer des fichiers TEF pour permettre le traitement des paiements des
+                        frais aux professionnels qui ont fourni un/des service(s) durant la semaine, générer les
+                        rapports de gérant, de professionnel et de membre. <br>
+                        <span class="title">Pré-conditions:</span>
+                        Les enregistrements de confirmation doivent être bien formattés et disponibles d’accès. Le système doit être fonctionnel.
+                        Ça se fait chaque vendredi à minuit. <br>
+                        <span class="title">Acteurs:</span> Aucun (Centre de Données).<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1.Lire les fichiers d’enregistrements des confirmations de présence de la semaine.<br>
+                            <div class="scenario">
+                                1.1. Pour chaque fichier &lsaquo;codeSeance&rsaquo;_&lsaquo;dateSeance&rsaquo;,
+                                lire les blocs d’enregistrement.
+                                <div class="scenario">
+                                    1.1.1. Accumuler les frais et le nombre de services fournis pour ce professionnel en
+                                    charge.<br>
+                                    1.1.2. Pour chaque bloc d’enregistrement, rédiger un bloc dans le rapport
+                                    membre pour les membres confirmés et un autre dans le rapport
+                                    professionnel dans les fichiers appropriés.
+                                </div>
+                            </div>
+                            2. Générer les TEF pour chaque professionnel (les frais ont été accumulés pour chaque
+                            professionnel) et rédiger un bloc dans le rapport du gérant pour chacun.
+                            <div class="scenario">
+                                2.1. Le nom du professionnel, le numéro unique et les frais total pour ce
+                                professionnel dans le TEF.<br>
+                                2.2. Ajouter au bloc de l’étape 2.1 le nombre total de services fournis.
+                            </div>
+                            3. Générer le reste du rapport de gérant.
+                            <div class="scenario">
+                                3.1. Calculer le nombre de professionnels.<br>
+                                3.2. Calculer le nombre total de services fournis à #GYM durant la semaine.<br>
+                                3.3. Calculer le total des frais à payer pour tous les professionnels ensemble.<br>
+                                3.4. Rédiger le bloc de fin dans le rapport de gérant.
+                            </div>
+                        </div>
+                        <div class="scenario">
+                            <span class="title">Scénario alternatif:</span>
+                            <div class="scenario">
+                                2.1.a. Le fichier n’existe pas dans le répertoire spécifié.
+                                <div class="scenario">
+                                    2.1.a.1. Modifier le chemin relatif au répertoire des rapports.<br>
+                                    2.1.a.2. Retour à l’étape 2.1.
+                                </div>
+                            </div>
+                        </div>
+                        <span class="title">Post-conditions:</span>Des fichiers TEF sont enregistrés dans un répertoire
+                        associé. Le rapport est aussi enregistré dans un répertoire de synthèse pour un accès futur.
+                    </div> <!-- Procédure comptable -->
+                </div>
+                <br>
+                <a href="#tableContent">Table des matières</a>
+                <hr>
+                <div>
+                    <h5>Relié aux incréments précédents</h5>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Gérer une séance<br>
+                        <span class="title">But:</span> Faire la gestion des séances comme ajouter, modifier et supprimer.<br>
+                        <span class="title">Acteurs:</span>L’agent (principal)<br>
+                        <span class="title">Préconditions:</span> L’agent est autorisé à faire la gestion.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1. Aller au CU « Consulter le Répertoire de Services ».<br>
+                            <div class="scenario">
+                                1.1. La séance choisie est affichée à l’écran.<br>
+                                1.2. Sinon, aller au CU « Créer une séance ».
+                            </div>
+                            2. Deux options s’affichent « Modifier » et « Supprimer ».<br>
+                            <div class="scenario">
+                                2.1. Sélectionner « Modifier ». Aller au CU  « Modifier une séance ».<br>
+                                2.2. Sélectionner « Supprimer ». Aller au CU « Supprimer une séance ».
+                            </div>
+                            3. Un message de succès est affiché sur l’écran pour confirmer les changements.
+                        </div>
+                        <div class="scenario">
+                            2.1. Le numéro unique est valide et l’écran affiche le succès « Validé ».<br>
+                        </div>
+                        <span class="title">Post-conditions:</span>Soit une nouvelle séance est ajoutée dans le Répertoire
+                        de Services, soit une séance a été modifiée, soit une séance a été enlevée du système.
+                    </div> <!-- Gérer une séance -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Modifier une séance<br>
+                        <span class="title">But:</span> Modifier un information de la séance<br>
+                        <span class="title">Acteurs:</span>L'agent (principal) et/ou le professionnel (secondaire)<br>
+                        <span class="title">Préconditions:</span> La séance existe et l'information est valide à modifier.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1.	Le professionnel se présente à la réception.<br>
+                            2.	L’agent entre les informations a modifier dans la seance.<br>
+                            3.	Les informations sont acheminées au Centre de Données.<br>
+                            4.	Le Centre de Données mets a jour la seance.<br>
+                        </div>
+                        <span class="title">Post-conditions:</span>Les modifications sont sauvegardées.
+                    </div> <!-- Modifier une séance -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Supprimer une séance<br>
+                        <span class="title">But:</span> Enlever une séance du Répertoire de Services.<br>
+                        <span class="title">Acteurs:</span>L’agent (principal)<br>
+                        <span class="title">Préconditions:</span> La séance existe et le professionnel en charge est d'accord.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1.	L’agent supprime la seance.<br>
+                            2.	Le centre de donnée mets a jour la liste des seances.
+                        </div>
+                        <span class="title">Post-conditions:</span>La séance n'existe plus dans le Répertoire des Services.
+                    </div> <!-- Supprimer une séance -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Gérer un membre<br>
+                        <span class="title">But:</span> Faire la gestion des comptes comme ajouter, modifier et supprimer.<br>
+                        <span class="title">Acteurs:</span>L’agent (principal)<br>
+                        <span class="title">Préconditions:</span> L’agent est autorisé à faire la gestion.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1. L’agent sélectionne « Gérer un compte membre ».<br>
+                            2. L’agent entre le numéro unique du membre qu’il veut gérer.
+                            <div class="scenario">
+                                2.1. Si le compte n’existe pas, aller au CU « Créer un compte membre ».<br>
+                                2.2. Sinon, le Centre de Données affiche les informations sur le compte.
+                            </div>
+                            3. Deux options s’affichent « Modifier » et « Supprimer ».<br>
+                            <div class="scenario">
+                                3.1. Sélectionner « Modifier ». Aller au CU « Modifier un compte membre ».<br>
+                                3.2. Sélectionner « Supprimer ». Aller au CU « Supprimer un compte membre ».
+                            </div>
+                            4. Un message de succès est affiché sur l’écran pour confirmer les changements.
+                        </div>
+                        <span class="title">Post-conditions:</span>Soit un nouveau compte membre est ajouté dans le
+                        Centre de Données, soit un compte membre a été modifié, soit un compte membre a été enlevé du système.
+                    </div> <!-- Gérer un compte membre -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Modifier un compte membre<br>
+                        <span class="title">But:</span> Modifier un information dans un compte membre<br>
+                        <span class="title">Acteurs:</span>L'agent (principal) et/ou le membre (secondaire)<br>
+                        <span class="title">Préconditions:</span> Le compte membre existe et l'information est valide
+                        à modifier.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1.	Le client se présente à la réception.<br>
+                            2.	L’agent entre les informations du client a modifier sur son ordinateur.<br>
+                            3.	Les informations sont acheminées au Centre de Données.<br>
+                            4.	Le Centre de Données mets a jour le membre.<br>
+                        </div>
+                        <span class="title">Post-conditions:</span>Les modifications dans le compte membre sont sauvegardées.
+                    </div> <!-- Modifier un commpte membre -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Supprimer un compte membre<br>
+                        <span class="title">But:</span> Enlever un compte membre du Centre de Données.<br>
+                        <span class="title">Acteurs:</span>L’agent (principal)<br>
+                        <span class="title">Préconditions:</span> Le compte membre existe et le membre en question
+                        est d'accord.<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1.	L’agent supprime le compte du membre.<br>
+                            2.	Le centre de donnée mets a jour la liste des comptes.
+                        </div>
+                        <span class="title">Post-conditions:</span>Le compte membre n'existe plus dans le
+                        Centre de Données.
+                    </div> <!-- Supprimer un compte membre -->
+                    <r></r>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Valider le numéro unique<br>
+                        <span class="title">But:</span> Vérifier si le numéro unique est valide ou non<br>
+                        <span class="title">Préconditions:</span> Le système est en marche.<br>
+                        <span class="title">Acteurs:</span>Agent/membre/professionel (principal)<br>
+                        <span class="title">Scénario principal:</span>
+                        <div class="scenario">
+                            1. Un numéro unique d’un membre est envoyé au Centre de Données.<br>
+                            2. Le Centre de Données vérifie que le numéro unique est valide.<br>
+                            <div class="scenario">
+                                2.1. Le numéro unique est valide et l’écran affiche le succès « Validé ».<br>
+                            </div>
+                        </div>
+                        <span class="title">Scénario alternatif:</span>
+                        <div class="scenario">
+                            2.a. Le courriel est invalide.
+                            <div class="scenario">
+                                2.a.1. Afficher l’échec « Numéro invalide ». Sinon, arrêter le CU.
+                            </div>
+                            2.b. Le courriel est valide, mais le compte appartenant à un membre est suspendu.<br>
+                            <div class="scenario">
+                                2.b.1. Afficher l’échec « Membre suspendu ». Sinon, arrêter le CU.
+                            </div>
+                        </div>
+                        <span class="title">Post-conditions:</span>Aucun.
+                    </div> <!-- Valider le numéro unique -->
+                    <br>
+                    <div>
+                        <span class="title">Cas d'utilisation:</span> Consulter le Répertoire des Services
+                        <span style="font-weight:bold;"> via la réception</span><br>
+                        <span class="title">But:</span> Aider un membre à consulter la liste des services offertes à #GYM par des professionnels<br>
+                        <span class="title">Pré-conditions:</span>La personne qui accède au Répertoire est un individu autorisé.
+                        Connaître où est situé le Répertoire des Services. Le système est en marche.<br>
+                        <span class="title">Acteurs:</span>Agent (principal) et/ou un membre (secondaire)<br>
+                        <span class="title">Scénario principal:</span><br>
+                        <div class="scenario">
+                            1.	L’agent accède au Répertoire des Services par la console.<br>
+                            2.	L’agent montre et navigue sur le Répertoire des Services à la guise du membre.
+                            <div class="scenario">
+                                2.1. L’agent choisit une séance<br>
+                                2.2. Toutes les informations sur la séance s’affiche sur la console
+                            </div>
+                            3. L’agent montre les séances.
+                            <div class="scenario">
+                                3.1. L’agent/membre choisit une séance.<br>
+                                3.2. Toutes les informations sur la séance s’affiche sur la console.
+                            </div>
+                        </div>
+                        <span class="title">Scénarios alternatifs:</span>
+                        <div class="scenario">
+                            1.a. Le Répertoire des Services est fermé pour une raison de maintenance, de conflit ou autre et on retourne à l’étape 3.<br>
+                            3.1.a. La séance est inaccessible ou n’existe plus (le Répertoire des Services n’est pas mis à jour) et on repart à l’étape 2.<br>
+                            3.3.a. Le membre veut s’inscrire à la séance qui s’affiche. Aller au cas d’utilisation « Le client s’inscrit à la séance » ou « Inscription à une séances ».
+                            <div class="scenario">
+                                1. Si le membre veut consulter d’autre(s) séance(s), retourner à l’étape 2. Sinon, 	terminer à l’étape 3.
+                            </div>
+                            3.3.b. Le client veut s’inscrire à une séance, mais n’est pas un membre.
+                            <div class="scenario">
+                                1. L’agent lui suggère de s’adhérer au #GYM. Aller au cas d’utilisation « Créer un compte 	membre ».
+                                2. Aller à l’étape 2.3.a.
+                            </div>
+                        </div>
+                        <span class="title">Post-conditions:</span>Aucun.
+                    </div> <!-- Consulter le répertoire de services avec un membre via la réception -->
+                </div>
+            </div>
+            <br>
+            <a href="#tableContent">Table des matières</a>
+            <hr>
+            <div>
+                <h4>Solution du TP-1</h4>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Exécuter un rapport de gérant<br>
+                    <span class="title">But:</span> Générer un rapport qui contient les informations pertinentes sur la
+                    semaine pour des raisons administratives, commerciales ou autres.  <br>
+
+                    <span class="title">Pré-conditions:</span>
+                    Le gérant est validé comme gérant. <br>
+
+                    <span class="title">Acteurs:</span> Gérant (principal) ou CU « Exécuter procédure comptable » (principal) <br>
+                    <span class="title">Scénario principal:</span>
+                    <div class="scenario">
+                        1. Lire le fichier qui contient les services fournis de la semaine. <br>
+                        2. Produire un rapport de synthèse basé sur ce fichier.<br>
+                        <div class="scenario">
+                            2.1. Écrire un bloc de description pour chaque professionnel qui doivent être
+                            payé pour avoir fourni un/des service(s) pour la semaine.<br>
+                            <div class="scenario">
+                                2.1.1. Ce bloc contient le nom et numéro du professionnel, le nombre de
+                                service qu’il a fourni pour la semaine et le total des frais pour la semaine.
+                            </div>
+                            2.2. Après les blocs, écrire un sommaire du rapport.<br>
+                            <div class="scenario">
+                                2.2.1. Strictement pour la semaine spécificé, écrire le nombre total de
+                                professionnels qui ont fourni des services, le nombre total de services
+                                fournis et le total des frais à payer.
+                            </div>
+                        </div>
+                        3. Ranger ce rapport dans un répertoire dédié pour les rapports de gérant.
+                    </div>
+                    <span class="title">Post-conditions:</span> Un rapport de synthèse est enregistré comme fichier dans
+                    un répertoire de synthèse où on garde l’historique des synthèses dans un période donné.<br>
+                </div> <!-- Exécuter un rapport de gérant -->
+                <br>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Créer un compte membre<br>
+                    <span class="title">But:</span> Le client adhère à #GYM<br>
+                    <span class="title" style="font-weight:bold;">Pré-conditions:</span>
+                    L'organisation RnB qui gère les paiements est actif/opère.<br>
+                    <span class="title">Acteurs:</span> Le client (secondaire) et l’agent (principal)<br>
+                    <span class="title">Scénario principal:</span>
+                    <div class="scenario">
+                        1.	Le client se présente à la réception.<br>
+                        2.	L’agent entre les informations du client sur son ordinateur
+                        <span style="font-weight:bold;">(parmi lesquelles un courriel valide est nécessaire)</span>.<br>
+                        3.	Les informations sont acheminées au Centre de Données.<br>
+                        <span style="font-weight:bold;">4.	Le client paie les frais d’adhesion</span><br>
+                        5.	Le Centre de Données créer le nouveau membre et lui assigne un numéro unique.
+                    </div>
+                    <span class="title">Post-conditions:</span>
+                    Un compte membre est enregistré dans le Centre de Données.
+                </div> <!-- Créer un compte membre -->
+                <br>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Créer un compte professionnel<br>
+                    <span class="title">But:</span> Créer un compte professionnel<br>
+                    <span class="title">Pré-conditions:</span>
+                    Le nouveau professionnel ne possède pas de compte professionnel...
+                    <br>
+                    <span class="title">Acteurs:</span> L'agent (principal) et le professionnel (secondaire)<br>
+                    <span class="title">Scénario principal:</span><br>
+                    <div class="scenario">
+                        1. L'agent prend toutes les informations nécessaires pour créer le compte professionnel.<br>
+                        2. Il entre toutes les informations au système selon un certain processus.
+                        <div class="scenario">
+                            2.1. Le compte est créé.
+                        </div>
+                        3. Une fois le compte créé, l'agent suggère si le professionnel veut créer une séance. Si oui,
+                        aller à "Créer une séance de service".
+                    </div>
+                    <span class="title">Post-conditions:</span>
+                    Le nouveau compte professionnel est enregistré dans le Centre de Données.
+                </div> <!-- Créer un compte professionnel -->
+                <br>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Créer une séance de service<br>
+                    <span class="title">But:</span> Un profesionnel veut offrir une séance<br>
+                    Le service à rechercher existe. Le professionnel a un compte au #GYM.<br>
+                    <span class="title">Acteurs:</span> Le professionel (secondaire) et l'agent (principal)<br>
+                    <span class="title">Scénario principal:</span>
+                    <div class="scenario">
+                        1.	Le professionnel se présente à la réception.<br>
+                        2.	Le professionnel donne les informations de la séance à l’agent.<br>
+                        3.	L’agent envoie les informations au Centre de Données.<br>
+                        4.	Le logiciel créer la séance.
+                    </div>
+                    <span class="title">Scénario alternatif:</span>
+                    <div class="scenario">
+                        1.1	Le professionnel donne ses informations à l’agent<br>
+                        1.2	L’agent créer un compte #GYM pour le professionnel. Le scénario principal reprend au point 2
+                    </div>
+                    <span class="title">Post-conditions:</span>
+                    Une nouvelle séance est enregistrée dans la liste des séances d'un service.
+                </div> <!-- Créer une séance de service -->
+                <br>
+                <div>
+                    <span class="title">Cas d'utilisation:</span> Consulter la liste des inscriptions à une séance
+                    <span style="font-weight:bold;">via la réception</span><br>
+                    <span class="title">But:</span> Aider un professionnel à consulter la liste des inscriptions à une de ses séances<br>
+                    <span class="title">Pré-conditions:</span>
+                    Le professionnel possède un compte professionel au #GYM. Il doit fournir un service au moins.
+                    <br>
+                    <span class="title">Acteurs:</span> L'agent (principal) et le professionnel (secondaire)<br>
+                    <span class="title">Scénario principal:</span><br>
+                    <div class="scenario">
+                        1. Le professionnel donne son numéro ID.<br>
+                        2. L'agent entre son ID au système.
+                        <div class="scenario">
+                            2.1. Le système retourne une liste des séances que ce professionnel offre.
+                        </div>
+                        3. La liste de ses séances est affichée à la console et le professionnel choisit quelle séance consulter.
+                        <div class="scenario">
+                            3.1. La séance choisie est récupérée et le système retourne la liste des inscriptions.
+                        </div>
+                        4. La liste des inscriptions à la séance choisie est affichée à la console.<br>
+                        5. Si le professionnel désire consulter un autre de ses séances, l'agent retourne à l'étape 3.
+                    </div>
+                    <span class="title">Scénario alternatif:</span>
+                    <div class="scenario">
+                        2.1.a. Le numéro du client n'existe pas dans le Centre de Données. L'agent peut soit lui suggérer de créer
+                        un compte. Si oui, aller à "Créer un compte professionnel".
+                    </div>
+                    <span class="title">Post-conditions:</span>Aucun.
+                </div> <!-- Consulter la liste des inscriptions à une séance via la réception -->
+            </div>
+            <br>
+            <a href="#tableContent">Table des matières</a>
+        </div>
+
+        <div class="tache" id="tache4"> <!-- RISKS -->
+            <h2>Tâche 4: Risques</h2>
+            <p>
+                Dans notre solution, on mentionne quelques contextes spécifiques en supposant les prochains points suivants:
+            </p>
+            <ul>
+                <li>
+                    Il est dit que l'agent interagit avec le système par la console. On suppose qu'une certaine séquence de commandes
+                    est nécessaire pour le déclenchement d'un cas d'utilisation et que le gym n'est pas renseigné sur la formation
+                    d'un agent.
+                </li>
+                <li>
+                    On a également supposé que le système est installé sur une seule machine, la machine utilisée par l'agent à la
+                    réception dy gym.
+                </li>
+                <li>
+                    Puisque les données seront enregistrées dans un fichier, on mentionnne deux risques sur la sécurité.
+                </li>
+                <li>
+                    Puisque les exigences fonctionnelles ne sont pas précisées, on mentionne deux cas spécifiques mais importants à
+                    régler. Un des cas relie aux risques de sécurité.
+                </li>
+            </ul>
+            <h3>Solution</h3>
+            <p>
+                Voici les risques que nous avons identifié selon l'ordre de sévérité:
+            </p>
+            <ol>
+                <li>
+                    Puisque les données sont entrées dans la console (la ligne de commande), l'agent ne peut seulement entrer qu'une
+                    donnée à la fois. Ne pas connaître l'ordre des entrées peut entraîner des erreurs, puis l'arrêt du système.
+                    (Un agent devra apprendre comment utiliser le système, il lui faut un manuel d'utilisation).
+                </li>
+                <li>
+                    Risque d'un étranger au contrôle du système sans la permission de l'agent. Aucun critère ou code d'accès assigné
+                    à l'agent pour valider son entrée au système. L'étranger pourra accéder à toutes les données du système.
+                </li>
+                <li>
+                    En assumant que le système est installé sur seulement une machine, si cette machine se brise ou ne fonctionne plus
+                    pour des raisons quelconques, on risque de perdre le système totalement.
+                </li>
+                <li>
+                    Puisque les comptes des membres et des professionnels sont identifiés par leur numéro unique seulement, les cas
+                    de fraude et de vol d'identité risquent la sécurité des clients du #GYM.
+                </li>
+                <li>
+                    Il n'y a pas de mécanismes de modification après la création d'une séance. Donc, si l'agent crée une séance avec les
+                    mauvaises informations, des clients vont s'enregistrer à une séance que le professionnel n'a pas voulu créer.
+                </li>
+            </ol>
+            <a href="#tableContent">Table des matières</a>
+
+        </div>
+
+        <div class="tache" id="tache5"> <!-- NON FUNCTIONAL REQUIREMENTS -->
+            <h2>Tâche 5: Exigences non-fonctionnelles</h2>
+            <p>
+                On liste quelques exigences qui ont été identifiées durant le travail sur le TP et qui n'ont pas été directement
+                précisées dans l'énoncé du TP. Cela nous aide également à comprendre comment le système va fonctionner et offre
+                une vue claire de comment le logiciel sera développé.
+            </p>
+            <h3>Solution</h3>
+            <p>
+                Voilà notre solution:
+            </p>
+            <ul>
+                <li>
+                    La validatibon d'un numéro de membre et la confirmation de la présence d'un membre à une séance doivent se faire
+                    dans moins de 10 secondes (contrainte sujette à des ajustements).
+                </li>
+                <li>
+                    Le numéro d'un membre validé ne peut être re-validé qu'après une heure pour ne pas laisser plusieurs personnes rentrer
+                    en même temps sous le même numéro de membre.
+                </li>
+                <li>
+                    Un membre régulier ne devrait pas être capable de consulter une liste d'inscription à une séance. On distinguera un
+                    membre régulier d'un professionnel par un attribut de classe.
+                </li>
+                <li>
+                    Pour les cas d'utilisations associés à un membre ou un professionnel, l'agent s'assure de confirmer que le client
+                    est bien un membre ou un professionnel du gym avant de continuer.
+                </li>
+                <li>
+                    Les entrées de données pour chaque cas d'utilisation suivent un certain ordre et un certain format pour pour
+                    éviter des exceptions/crashs non prévues. Il faut donc un manuel d'utilisation bien écrit.
+                </li>
+                <li>
+                    <b>Un courriel doit contenir un @. Il faut pouvoir vérifier cela.</b>
+                </li>
+				<li><b>
+					Organiser les fichiers et les rapports générés. Avoir des hiérarchies de directoire selon certains critères.
+                    Le nom d'un fichier d'enregistrements comporte le codeSeance_dateSeance.
+                    Le nom d'un rapport membre/professionnel comporte le numeroUnique_dateActuelle.
+                    Le nom d'un rapport gérant comporte la dateSemaine.
+                    Le nom des TEFs comporte le numeroPro_dateSemaine.
+                </b></li>
+            </ul>
+            <h5>Voici comment les fichiers générées sont organisés.</h5>
+
+            <figure>
+                <img src="Exigences/exigences/resources_view.PNG" alt="resources folder">
+                <figcaption>C:\[user.dir]\</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Exigences/exigences/inside_resources_view.PNG" alt="inside resources folder">
+                <figcaption>\resources\</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Exigences/exigences/inside_enregistrement_view.PNG" alt="inside enregistrement folder">
+                <figcaption>\resources\Enregistrement\</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Exigences/exigences/inside_rapport_view.PNG" alt="inside rapport folder">
+                <figcaption>\resources\Rapport\</figcaption>
+            </figure>
+            <a href="#tableContent">Table des matières</a>
+
+        </div>
+
+        <div class="tache" id="bonusTP1"> <!-- 1ST ITERATION PROTOTYPE -->
+            <h2>Tâche Bonus TP1: Implémentation d'un prototype</h2>
+            <h3>Le prototype a été déplacé à la <a href="#tache10">Tâche 10</a>!</h3>
+
+            <i style="font-size:20px;">Obsolete</i>
+            <div style="opacity:0.4;">
+                <p>
+                    Pour utiliser le prototype, suivez-les options qui sont affichées durant son <i>exécution</i>!
+                </p>
+                <p>
+                    Voici le fichier <as href="Implémentation\src\ift2255\Main.java">Main.java</as> qui est la base du prototype codé par Soumaila.
+                    Et voici les classes utilisées dans Main.java.
+
+                </p>
+                <ul>
+                    <li><as href="Implémentation/src/ift2255/Personne.java">Personne.java</as></li>
+                    <li><as href="Implémentation/src/ift2255/Membre.java">Membre.java</as></li>
+                    <li><as href="Implémentation/src/ift2255/Professionnel.java">Professionnel.java</as></li>
+                </ul>
+            </div>
+
+            <a href="#tableContent">Table des matières</a>
+        </div>
+
+        <div class="tache" id="tache6"> <!-- ANALYSE -->
+            <h2>Tâche 6: Analyse</h2>
+            <p>
+                En principe, on a besoin d'informatiser les utilisateurs (agent et gérant) et les acteurs secondaires
+                (membre et professionnel), puis les stocker dans quatres listes (une pour agent, gérant, membre et professionel)
+                dans le Centre de Données. On veut aussi stocker les services (qui contiennent des séances) dans le Centre
+                comme une liste également. Le système central a en principe des méthodes getters/setters et d'affichage.
+                On veut aussi pouvoir gérer et vérifier les horaires des acteurs secondaires pour éviter des conflits d'horaire.
+            </p>
+            <p>
+                Le système #GYM va communiquer avec le Centre de Données via les méthodes getter/setter et va déclencher
+                les CUs par les méthodes statiques (qui sont elles-mêmes déclenchées par les inputs de l'utilisateur).
+            </p>
+            <h3>Note</h3>
+            <p>
+                Notre diagramme de classe ne satisfait pas l'analyse ci-dessous, mais le reste du TP2 suit le diagramme
+                de classe. La rédaction de l'analyse a été fait après la complétion des diagrammes. Pour la prochaine phase,
+                on a l'intention d'adapter notre design à l'idée projetée le paragraphe suivant.
+            </p>
+			<h3>Ajout</h3>
+			<p>
+				On suggère de stocker les enregistrements dans des dossiers par semaine. Chaque séance fourni de la semaine aura
+				un fichier qui lui est dédié avec le code de séance et la date dans son nom.
+				
+					Enregistrements -> Inscriptions -> Semaine AAAA-MM-JJ -> CodeSeance_Date
+									-> Confirmations -> Semaine AAAA-MM-JJ -> CodeSeance_Date
+					Rapport -> TEF -> Semaine AAAA-MM-JJ -> NumeroProfessionnel
+							   Rapport Gérant -> Annee AAAA -> Semaine MM-JJ
+							   Rapport Membre -> Semaine AAAA-MM-JJ
+							   Rapport Profesionnel -> Semaine AAAA-MM-JJ
+			</p>
+			<p>
+				Consulter la liste d'inscriptions nécessite d'envoyer un REQUÊTE au système central en fournissant le code de 
+				séance.
+			</p>
+            <br>
+            <a href="#tableContent">Table des matières</a>
+        </div>
+
+        <div id="tache7"> <!-- ACTIVITY DIAGRAMS -->
+            <div class="tache">
+                <h2>Tâche 7: Diagrammes d'activités</h2>
+                <p>
+                    On suppose que l'agent est authentifié avant d'utiliser le logiciel comme le montre le diagramme principal
+                    et que la gestion des membres et des séances se font uniquement à partir de l'agent communiquant avec
+                    le système. Donc, on suppose que la validation d'un professionnel est déjà fait.
+                </p>
+                <h3>Solution</h3>
+                <h4>Diagramme principal</h4>
+            </div>
+
+            <img src="Analyse/Activité_Flux_Système_tp3.jpg" width="1300px" style="margin-left:auto;margin-right:auto;display:block;">
+
+            <div class="tache">
+                <h4>Ajouter/Modifier/Supprimer un compte membre</h4>
+                <img src="Analyse/inscrit_modifie_sup membre.jpg" width="900px" style="margin-left:auto;margin-right:auto;display:block;">
+
+                <h4>Ajouter/Modifier/Supprimer une séance</h4>
+                <img src="Analyse/ajouter_mod_sup service.jpg" width="900px" style="margin-left:auto;margin-right:auto;display:block;">
+
+                <h4>Inscription à une séance</h4>
+                <img src="Analyse/Inscription à une séance Diagramme Activités.jpg" width="900px" style="margin-left:auto;margin-right:auto;display:block;">
+
+                <h4>Confirmation une séance </h4>
+                <img src="Analyse/Confirmer présence Diagramme Activités.jpg" width="900px" style="margin-left:auto;margin-right:auto;display:block;">
+
+                <h4>Procédure comptable</h4>
+                <img src="Analyse/procedure_comptable_tp3.jpg" width="900px" style="margin-left:auto;margin-right:auto;display:block;">
+
+                <a href="#tableContent">Table des matières</a>
+            </div>
+        </div>
+
+        <div id="tache8"> <!-- CLASS DIAGRAM -->
+            <div class="tache">
+                <h2>Tâche 8: Diagramme de classe</h2>
+                <p>
+                    Dans le diagramme de classe, on peut supposer que les getters/setters sont inclus pour tous les attributs et que
+                    les constructeurs prennent tous les attributs nécessaires comme paramètres. Si le dernier fait n'est pas
+                    accompli, cela veut dire que les attributs sont attribués par un setter.
+                </p>
+            </div>
+            <div>
+                <div class="tache">
+                    <h3>Vue générale</h3>
+                    <a href="#tableContent">Table des matières</a>
+                </div>
+                <img src="Conception/TP3/TP3_ClassDiagram.jpg" style="margin-left:auto;margin-right:auto;display:block;width:1300px;padding-top:0px;">
+
+                <div class="tache">
+                    <h3>Case étendue pour la classe CentreDonnee</h3>
+                    <a href="#tableContent">Table des matières</a>
+                </div>
+                <img src="Conception/TP3/view/classe_centre_donnee_fullview.PNG" style="margin-left:auto;margin-right:auto;display:block;width:1300px;padding-top:0px;">
+
+                <div class="tache">
+                    <h3>Case étendue pour la classe Seance</h3>
+                    <a href="#tableContent">Table des matières</a>
+                </div>
+                <img src="Conception/TP3/view/classe_seance_fullview.PNG" style="margin-left:auto;margin-right:auto;display:block;width:1300px;padding-top:0px;">
+
+                <div class="tache">
+                    <h3>Case étendue pour la classe ProcedureComptable</h3>
+                    <a href="#tableContent">Table des matières</a>
+                </div>
+                <img src="Conception/TP3/view/classe_procedure_comptable_fullview.PNG" style="margin-left:auto;margin-right:auto;display:block;width:1300px;padding-top:0px;">
+
+                <div class="tache">
+                    <h3>Vue sur Compte</h3>
+                    <a href="#tableContent">Table des matières</a>
+                </div>
+                <img src="Conception/TP3/view/compte_view.PNG" style="margin-left:auto;margin-right:auto;display:block;width:1300px;padding-top:0px;">
+
+                <div class="tache">
+                    <h3>Vue sur Enregistrement (et sous-classes), ProcedureComptable et Lire</h3>
+                    <a href="#tableContent">Table des matières</a>
+                </div>
+                <img src="Conception/TP3/view/enregistrement_procedurecomptabe_view.PNG" style="margin-left:auto;margin-right:auto;display:block;width:1300px;padding-top:0px;">
+
+                <div class="tache">
+                    <h3>Vue sur Seance et Service</h3>
+                    <a href="#tableContent">Table des matières</a>
+                </div>
+                <img src="Conception/TP3/view/seance_service_view.PNG" style="margin-left:auto;margin-right:auto;display:block;width:1300px;padding-top:0px;">
+
+                <div class="tache">
+                    <h3>Vue sur CentreDonnee et Main</h3>
+                    <a href="#tableContent">Table des matières</a>
+                </div>
+                <img src="Conception/TP3/view/main_centredonne_view.PNG" style="margin-left:auto;margin-right:auto;display:block;width:1300px;padding-top:0px;">
+
+                <div class="tache">
+                    <h3>Vue sur CentreDonee et Service</h3>
+                    <a href="#tableContent">Table des matières</a>
+                </div>
+                <img src="Conception/TP3/view/centredonnee_service_view.PNG" style="margin-left:auto;margin-right:auto;display:block;width:1300px;padding-top:0px;">
+
+                <div class="tache">
+                    <h3>Vue sur les formateurs</h3>
+                    <a href="#tableContent">Table des matières</a>
+                </div>
+                <img src="Conception/TP3/view/formater_view.PNG" style="margin-left:auto;margin-right:auto;display:block;width:1300px;padding-top:0px;">
+            </div>
+            <div class="tache">
+                <a href="#tableContent">Table des matières</a>
+            </div>
+        </div>
+
+        <div id="tache9"> <!-- SEQUENCE DIAGRAM -->
+            <div class="tache">
+                <h2>Tâche 9: Diagrammes de séquence</h2>
+                <h3>Solution</h3>
+            </div>
+
+            <div class="tache">
+                <h4>Ajouter/Modifier/Supprimer un membre</h4>
+            </div>
+            <img src="Conception/TP3/Modified_ajout_modif_supp_membre.jpg" width="1300px" style="margin-left:auto;margin-right:auto;display:block;">
+
+            <div class="tache">
+                <h4>Ajouter/Modifier/Supprimer une séance</h4>
+            </div>
+            <img src="Conception/TP3/Modified_ajout_modif_supp_seance.jpg" width="1300px" style="margin-left:auto;margin-right:auto;display:block;">
+
+            <div class="tache">
+                <h4>Inscription à une séance</h4>
+            </div>
+            <img src="Conception/TP3/Inscription à une séance TP 3.jpg" width="1300px" style="margin-left:auto;margin-right:auto;display:block;">
+
+            <div class="tache">
+                <h4>Confirmation d'une présence à une séance</h4>
+            </div>
+            <img src="Conception/TP3/Confirmer présence TP3.jpg" width="1300px" style="margin-left:auto;margin-right:auto;display:block;">
+
+            <div class="tache">
+                <h4>Procédure comptable</h4>
+            </div>
+            <img src="Conception/TP3/Procedure_Comptable_tp3.jpg" width="1300px" style="margin-left:auto;margin-right:auto;display:block;">
+
+            <div class="tache">
+                <a href="#tableContent">Table des matières</a>
+            </div>
+        </div>
+
+        <div class="tache" id="tache10"> <!-- 2ND ITERATION PROTOTYPE -->
+            <h2>Tâche 10: Prototype (Mise à jour)</h2>
+            <h3>Implémentation complète à la <a href="#tache10">Tâche 11</a>!</h3>
+            <i style="font-size:20px;">Obsolete</i>
+            <div style="opacity:0.4;">
+                <p>
+                    Pour utiliser le prototype, suivez-les options qui sont affichées durant son <i>exécution</i>!
+                </p>
+                <p>
+                    Voici le fichier <a href="Implémentation/src/ift2255/CentreDonnee.java">CentreDonnee.java</a> qui est
+                    la base du prototype codé par Soumaila. Et voici les classes utilisées dans Main.java.
+                </p>
+                <ul>
+                    <li><a href="Implémentation/src/ift2255/Compte.java">Compte.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/Membre.java">Membre.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/Professionnel.java">Professionnel.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/Service.java">Service.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/Seance.java">Seance.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/ProcedureComptable.java">ProcedureComptable.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/Gerant.java">Gerant.java</a></li>
+                    <li><a href="Implémentation/src/ift2255/Agent.java">Agent.java</a></li>
+                    <li><a hrerf="Implémentation/src/ift2255/CentreDonnee.java">CentreDonnee.java</a></li>
+                </ul>
+            </div>
+
+            <a href="#tableContent">Table des matières</a>
+        </div>
+
+        <div class="tache" id="tache11">
+            <h2>Implémentation</h2>
+            <h3>Main</h3>
+            <a href="Test_implémentation/ift2255_test/src/ift2255/Main.java">Main.java</a>
+
+            <h3>Classes</h3>
+            <ul>
+                <li>
+                    <a href="Test_implémentation/ift2255_test/src/ift2255/CentreDonnee.java">CentreDonnee.java</a></li>
+                <li><a href="Test_implémentation/ift2255_test/src/ift2255/Compte.java">Compte.java</a></li>
+                <li><a href="Test_implémentation/ift2255_test/src/ift2255/Membre.java">Membre.java</a></li>
+                <li><a href="Test_implémentation/ift2255_test/src/ift2255/Professionnel.java">Professionnel.java</a></li>
+                <li><a href="Test_implémentation/ift2255_test/src/ift2255/Service.java">Service.java</a></li>
+                <li><a href="Test_implémentation/ift2255_test/src/ift2255/Seance.java">Seance.java</a></li>
+                <li><a href="Test_implémentation/ift2255_test/src/ift2255/Lire.java">Lire.java</a></li>
+                <li><a href="Test_implémentation/ift2255_test/src/ift2255/Enregistrement.java">Enregistrement.java</a></li>
+                <li><a href="Test_implémentation/ift2255_test/src/ift2255/Inscription.java">Inscription.java</a></li>
+                <li><a href="Test_implémentation/ift2255_test/src/ift2255/Confirmation.java">Confirmation.java</a></li>
+                <li><a href="Test_implémentation/ift2255_test/src/ift2255/ProcedureComptable.java">
+                    ProcedureComptable.java</a></li>
+                <li><a href="Test_implémentation/ift2255_test/src/ift2255/formateur/CalendarFormat.java">
+                    CalendarFormat.java</a></li>
+                <li><a href="Test_implémentation/ift2255_test/src/ift2255/formateur/NumberFormat.java">
+                    NumberFormat.java</a></li>
+                <li><a href="Test_implémentation\ift2255_test\src\ift2255\Pays\Canada.java">Canada.java</a></li>
+            </ul>
+
+            <br>
+            <a href="#tableContent">Table des matières</a>
+        </div>
+
+        <div class="tache" id="tache12">
+            <h2>Tests unitaires avec JUnit</h2>
+
+            <h4>Tests de Adrien</h4>
+            <img src="Test/test_JUnit_Adrien.PNG" style="width:900px;">
+
+            <h4>Tests de Soumaila</h4>
+            <img src="Test/test_JUnit_Soumaila.PNG">
+
+            <h4>Tests de Tina</h4>
+            <img src="Test/test_JUnit_Tina.PNG" style="width:900px;">
+
+            <br>
+            <a href="#tableContent">Table des matières</a>
+        </div>
+
+        <div class="tache" id="tache13">
+            <h2>Livraison et documentation</h2>
+            <a href="Implementation/release/Documentation/Javadoc/allclasses.html">Javadoc</a>
+
+            <div>
+                <h2>Manuel d'utilisation</h2>
+                <h3>Utilisation sur la console</h3>
+                <ul>
+                    <li>Pour créer un compte pour un membre, entrez 1 dans la ligne de commande
+                    et suivez les instructions qui s'affichent sur l'écran.</li>
+                    <li>Pour créer un compte pour un professionnel, entrez 2 dans la
+                        ligne de commande et suivez les instructions comme pour le membre.</li>
+                    <li>
+                        Pour consulter le répertoire de service, entrez 3 dans la ligne de commande.
+                    </li>
+                    <li>Pour créer un service, entrez 4 dans la ligne de commande et entrez les
+                        informations demandées par le logiciel qui sont affichées à l’écran.</li>
+                    <li>Pour créer une séance de service, entrez 5 dans la ligne de commande et suivez les
+                         instructions demandées.</li>
+
+                    <li>Pour consulter la liste des inscriptions à une séance demandée, entrez 6 et entrez les
+                        informations demandées.
+                    </li>
+                    <li>Pour la gestion d’un compte membre/professionnel (modification, suppression, création),
+                        entrez 7 dans la ligne de commande.</li>
+                    <li>Pour la gestion de séance (modification, annulation ou autre changement),
+                        entrez 8 dans la ligne de commande et suivez les directives.</li>
+                    <li>Pour rédiger le rapport de gérant, entrez 9 dans la ligne de commande.</li>
+                    <li>Pour consulter le rapport du gérant de la semaine passée, entrez 10 dans la ligne de commande.</li>
+                    <li>Pour valider un numéro unique, entrez 18 dans la ligne de commande et suivez les instructions
+                        affichées par le logiciel.</li>
+                    <li>Pour exécuter la procédure comptable manuellement pour tester, entrez le 19.</li>
+                </ul>
+                <h3>Utilisation sur l'application mobile</h3>
+                <ul>
+                    <li>Pour se connecter sur l’application mobile en tant que membre, entrez 11
+                        et entrez le courriel du membre.</li>
+                    <li>Pour s'inscrire à une séance, entrez 12 et suivez les instructions.</li>
+                    <li>Pour consulter le rapport le plus récent d'un membre, entrez le 13.</li>
+                    <li>Pour se connecter sur l’application mobile en tant que professionnel,
+                        entrez 14 et entrez le courriel du professionnel.</li>
+                    <li>Pour confirmer la présence d'un membre à une séance, entrez 15 et suivez les instructions.</li>
+                    <li>Pour consulter le rapport le plus récent d'un professionnel, entrez le 16.</li>
+                </ul>
+
+                <h4>Pour quitter le programme, entrez le 17.</h4>
+            </div>
+
+
+            <br>
+            <a href="#tableContent">Table des matières</a>
+        </div>
+    </div>
+</body>
+</html>
